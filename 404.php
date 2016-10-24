@@ -2,7 +2,7 @@
 <!-- The home-page template file -->
 <?php get_header(); ?>
 
-<?php //get_template_part('partials/buttons'); ?>
+<?php get_template_part('partials/buttons'); ?>
 
   <div id="left_col" class="map_leftCol">
 
@@ -37,4 +37,4 @@
 
   <div id="map"><span class="loading">loading tiles...</span></div>
 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>

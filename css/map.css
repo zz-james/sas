@@ -1,16 +1,15 @@
 /* -------------m a p   s t u f f ----------------- */
 
 #map {
-  padding-top: 206px;
-  height: 79%;
+
+  height: 76.5%;
   margin-left: 38%;
 }
 
 .map_leftCol {
   position: absolute;
   width: 38%;
-  height: 88.6%;
-  margin-top: 206px;
+  height: 76.5%;
   background-color: #96D2D7;
   overflow-y: auto; 
 }
@@ -18,8 +17,17 @@
 .map_leftCol .localservices-search {
     background-color: #BCE1E1;
     font-size: 2vw;
+    width: 97%;
 }
 
+.map_leftCol input::-webkit-input-placeholder {
+  font-size  : 9px;
+  line-height: 12px;
+}
+
+.map_leftCol input::-moz-placeholder {
+  font-size: 9px;
+}
 
 .service_details {
   color: #fff;

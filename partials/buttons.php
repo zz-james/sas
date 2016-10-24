@@ -37,7 +37,7 @@
       <div class="button_container">
         <a href="/i-didnt-even-know-the-person/" class="no_decoration">
           <img src="<?php echo THEME_DIR;?>/img/button_didnt_know.png" />
-          <div class="button_text">I Didn't Know Them<p>How you may be feeling. You are not alone.</p>
+          <div class="button_text">Witnesses<p>How you may be feeling. You are not alone.</p>
           </div>
         </a>
       </div>

@@ -1,5 +1,5 @@
 <?php /* Template Name: Local Services */ ?>
-<!-- The home-page template file -->
+<!-- The local services template file -->
 <?php get_header(); ?>
 
 <?php get_template_part('partials/buttons'); ?>

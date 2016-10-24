@@ -42,7 +42,7 @@
 
 
 
-.page-template-default .homepage_buttons {
+/*.page-template-default .homepage_buttons {
     background-color: rgba(255,255,255,0.7);
     display: block;
     margin: 0;
@@ -63,14 +63,14 @@
   min-width: initial;
   text-align: left;
   
-}
+}*/
 
-.page-template-default .homepage_buttons .button_container img {
+/*.page-template-default .homepage_buttons .button_container img {
   height: 50px;
   width: 50px;
-}
+}*/
 
-.page-template-default .homepage_buttons .button_container .button_text {
+/*.page-template-default .homepage_buttons .button_container .button_text {
   display: inline-block; 
   max-width: initial;
   font-size: 18px !important; 
@@ -84,14 +84,11 @@
 .page-template-default .homepage_buttons .button_container .button_text p {
   display: none;
 }
+*/
 
 
 
 
-
-.page-template-default ul {
-  font-size: 1.9vw;
-}
 
 .page-template-default .two_col {
   vertical-align: top;
@@ -99,9 +96,7 @@
   width: 49%;
 }
 
-.page-template-default li {
-  text-align: left;
-}
+
 
 /* highly temporary */
 .page-template-default .content-inner{

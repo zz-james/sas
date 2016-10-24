@@ -1,0 +1,73 @@
+/* styles unnafected by screen size */
+
+.emotional-support .content {
+  background-color: #fff;
+  color: rgb(88,88,90);  
+  text-align: center;
+}
+
+.emotional-support .content-top {
+  background-color: #fff;
+};
+
+.emotional-support .content-inner .page_header{
+  border-bottom: 2px solid black;
+}
+
+/* ------------------------------ mobile first ------------------------------ */
+
+/* below 380px wide styles */
+.emotional-support .content-top {
+  padding-top: 0;
+}
+
+.emotional-support .content-inner {
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
+
+.emotional-support .content-inner .content-inner-top {
+  margin-top: 0;
+}
+.emotional-support .content-inner .page_header{
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.emotional-support .content-top p {
+  font-size: initial;
+}
+
+.emotional-support .spacer {
+    height: 0px;
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, latest Phones */ 
+@media only screen and (min-width : 380px) {
+
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, Tablets Portrait */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* ------------------------------------------- */
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* ------------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px) {
+
+
+}

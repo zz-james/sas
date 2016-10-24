@@ -15,15 +15,16 @@ Description: Theme file for Support After Suicide
  *  992px < width < 1700px : medium devices, desktops / media query
  * 1700px < width <    ∞px : large devices / media query
  */
-
+@import 'css/shame.css';
 @import 'css/menubar.css';
-@import 'css/content.css';
 @import 'css/searchbar.css';
 @import 'css/button.css';
 @import 'css/map.css';
 @import 'css/svg.css';
+@import 'css/content.css';
+@import 'css/emotional-support.css';
 @import 'css/home.css';
-@import 'css/shame.css';
+
 
 
 /* element based styles */

@@ -7,29 +7,6 @@
 
 .content-top {
   background-color: #98D2D7;
-  /*background-image   : url("img/content-top-bg.png");*/
-}
-
-.content-bottom {
-  background-color   : #79C3BF;
-  background-image   : url("img/stock-photo-people-drinking-coffee-in-cafe-closeup-of-couple-hands-with-cups-428573581.jpg");
-  background-repeat  : no-repeat;
-  background-position: left top;  
-  background-size    : 100%;
-  padding-bottom     : 50px;
-  padding-top        : 225px;
-}
-
-
-hr.content-divider {
-  height          : 2px;
-  border          : 0;
-  background-color: rgb(88,88,90); 
-  color           : rgb(88,88,90); 
-}
-
-.content-lineheight66px {
-  line-height: 66px;
 }
 
 .img--divider {

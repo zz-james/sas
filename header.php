@@ -27,8 +27,8 @@
     <!-- temporary please remove -->
     <link rel="stylesheet" id="screen-style-css" href="wp-content/themes/sas/style.css" type="text/css" media="all">
   </head>
-
-  <body <?php body_class(); ?> >
+  <?php global $post; ?>
+  <body <?php body_class($post->post_name); ?> >
 
     <div id="menu" class="menubar">
       <div class="menubar-inner">
