@@ -1,0 +1,145 @@
+
+/* styles unnafected by screen size */
+
+.menubar {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  background-color: #FFF;
+  box-shadow      : 0px 0px 2px 2px rgba(128,128,128,0.5);
+}
+
+.menubar--logo {
+  background-image    : url(../img/sas_logo.png);
+  background-repeat   : no-repeat;
+  background-position : left top;
+  background-size     : contain;
+  display             : inline-block;
+}
+
+.menubar--mainnav {
+/*  border-top: 2px solid #070;*/
+  list-style : none;
+  text-align : left;
+  white-space: nowrap;
+}
+
+.menubar--mainnav li {
+  display:inline-block;
+}
+
+.menubar--mainnav a {
+  color: #787878;
+  text-decoration: none;
+}
+
+/* ------------------------------ mobile first ------------------------------ */
+
+/* below 380px wide styles */
+
+.menubar-inner {
+  padding: 28px 5% 20px 4%;
+}
+
+.menubar--mainnav {
+  margin    : 0;
+  padding   : 0;
+}
+
+.menubar--mainnav a {
+  font-size: 3vw;
+}
+
+.menubar--mainnav li {
+  width     : 27%;
+  text-align: center;
+  border-top: 2px solid #070;
+}
+
+.menubar--mainnav li:first-child {
+  text-align: left;
+  width     : 10%;
+}
+
+.menubar--mainnav li:last-child {
+  text-align: right;
+  width     : 10%;
+}
+
+.menubar--logo {
+  width      : 35%;
+  padding-top: 10%;
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, latest Phones */ 
+@media only screen and (min-width : 380px) {
+
+  .menubar--mainnav li {
+    width     : 25%;
+    text-align: center;
+  }
+
+  .menubar--mainnav li:first-child {
+    width: 12%;
+  }
+
+  .menubar--mainnav li:last-child {
+    width: 14%;
+  }
+
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, Tablets Portrait */
+@media only screen and (min-width : 768px) {
+  
+  .menubar--mainnav {
+    padding-top: 15px;
+  }
+
+}
+
+/* ------------------------------------------- */
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  .menubar-inner {
+    padding: 14px 5% 5px 4%;
+  }
+
+  .menubar--mainnav {
+    display       : inline-block;
+    margin-left   : 5%;
+    border-top    : 0px;
+    vertical-align: top;
+    padding-top: 10px;
+  }
+
+  .menubar--mainnav a {
+    font-size : 1.68vw;
+  }
+
+  .menubar--mainnav li {
+    width      : 36%;
+    text-align : center;
+    border-top : 0px;
+  }
+
+  .menubar--logo {
+    padding-top : 5%;
+    width       : 16%;
+  }
+
+}
+
+/* ------------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px) {
+
+
+}

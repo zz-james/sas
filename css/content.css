@@ -1,0 +1,186 @@
+/* styles unnafected by screen size */
+
+.content {
+  color: rgb(88,88,90);  
+  text-align: center;
+}
+
+.content-top {
+  background-color: #98D2D7;
+  /*background-image   : url("img/content-top-bg.png");*/
+}
+
+.content-bottom {
+  background-color   : #79C3BF;
+  background-image   : url("img/stock-photo-people-drinking-coffee-in-cafe-closeup-of-couple-hands-with-cups-428573581.jpg");
+  background-repeat  : no-repeat;
+  background-position: left top;  
+  background-size    : 100%;
+  padding-bottom     : 50px;
+  padding-top        : 225px;
+}
+
+
+hr.content-divider {
+  height          : 2px;
+  border          : 0;
+  background-color: rgb(88,88,90); 
+  color           : rgb(88,88,90); 
+}
+
+.content-lineheight66px {
+  line-height: 66px;
+}
+
+.img--divider {
+  width: 100%;
+  margin-bottom: -5px;
+  background-color: #9CD2D7;
+}
+
+
+.spacer {
+  height: 38px;
+}
+
+
+/* ------------------------------ mobile first ------------------------------ */
+
+/* below 380px wide styles */
+
+.content-top {
+  padding-top: 23%;
+}
+
+.content-top p {
+  font-size: 6vw;
+  margin-bottom: 19px;
+}
+
+.content-inner {
+  margin: auto;
+}
+
+.content-inner-top {
+  width     : 80%;
+  margin-top: 130px;
+}
+
+hr.content-divider-top {
+  margin: 36px 0 53px 0;
+}
+
+.content-xl {
+  display      : block;
+  font-size    : 11vw;
+  line-height  : 15vw;
+}
+
+.content-lg {
+  font-size    : 8vw;
+}
+
+.content-lgp {
+  font-size    : 10vw;
+}
+
+.content-inner-bottom {
+  padding-top: 122px;
+}
+
+
+/* ------------------------------------------- */
+
+
+/* Small Devices, Tablets Portrait */
+@media only screen and (min-width : 768px) {
+
+  .content-inner-top {
+    width: 64%;
+    margin-top: 157px;
+/*    max-width : 1117PX;*/
+  }
+
+  .content-top p {
+      font-size: 3vw;
+      margin-bottom: 19px;
+  }
+
+  .content-xl {
+    font-size: 5.5vw;
+    line-height: initial;
+  }
+  
+  .content-unhelpful {
+    font-size: 4.9vw;
+  }
+  
+  .content-lg {
+    font-size: 3.5vw;
+  }
+
+  .content-lgp {
+    font-size: 4.5vw;
+  }
+
+  .content-inner-bottom {
+    padding-top: 180px;
+  }
+
+}
+
+
+/* ------------------------------------------- */
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  /* - */
+
+  .content {
+    font-size  : 51px;
+  }
+
+  .content-top {
+    padding-top: 1%;
+  }
+
+  .content-inner-top {
+    margin-top: 215px;
+    max-width : 735PX;
+  }
+
+  .content-inner {
+
+  }
+
+  .content-top p {
+    margin-bottom: 22px;
+    font-size    : 26.5px;
+  }
+
+  hr.content-divider-top {
+    margin: 35px 0 39px 0;
+  }
+
+  .content-xl {
+    font-size: 2.5vw;
+  }
+
+  .content-lg {
+    display: none;
+  }
+
+  .content-unhelpful {
+    font-size  : 3vw;
+    margin-left: -38px;
+  }
+
+
+  .content-inner-bottom {
+    padding-top: 30px;
+    background-color: rgba(255,255,255,0.7);
+    color: rgb(53,67,77);
+    border-radius: 10px;
+    max-width: 1000px;
+  }

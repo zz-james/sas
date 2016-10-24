@@ -1,0 +1,124 @@
+.home .content {
+  padding-top: 121px;
+  color: rgb(88,88,90);  
+  text-align: center;
+}
+
+.home .content-top {
+  background-color: #98D2D7;
+  /*background-image   : url("img/content-top-bg.png");*/
+}
+
+.home .content-bottom {
+  background-color   : #79C3BF;
+  background-image   : url("../img/content-top-bg.gif");
+  background-repeat  : no-repeat;
+  background-position: left top;  
+}
+
+
+.home hr.content-divider {
+  height          : 2px;
+  border          : 0;
+  background-color: rgb(88,88,90); 
+  color           : rgb(88,88,90); 
+}
+
+.home .img--divider {
+  width           : 100%;
+  margin-bottom   : -5px;
+  background-color: #9CD2D7;
+}
+
+.home .content-inner-bottom {
+  background-color: rgba(255,255,255,0.7);
+  color           : rgb(53,67,77);
+  border-radius   : 10px;
+}
+
+
+/* styles unnafected by screen size */
+
+
+/* ------------------------------ mobile first ------------------------------ */
+
+/* below 380px wide styles */
+.home .content-inner-top {
+  width         : 75%;
+  margin-top    : 67px;
+  padding-bottom: 82px;
+}
+
+.home .content-inner-top p {
+  font-size    : 3.5vw;
+  line-height  : 4.1vw;
+  margin-bottom: 7px;
+}
+
+.home hr.content-divider-top {
+  margin: 35px 0;
+}
+
+.home .content-xl {
+  font-size    : 6.6vw;
+  line-height  : 11vw;
+}
+
+.home .content-ml {
+  font-size: 22.5px;
+  font-size: 4.7vw;
+}
+
+.home .down_arrow {
+  margin-top: 62px;
+}
+
+
+.home .content-bottom {
+  background-size    : 100%;
+  padding-bottom     : 50px;
+  padding-top        : 25px;
+}
+
+.home .content-inner-bottom {
+  width      : 90%;
+  padding    : 5px 0 0 0;
+  margin-top : 160px;
+}
+
+.home .content-buttons-header {
+  display: block;
+  font-size: 6.5vw;
+  margin: auto; /* centre */
+  width: 55%;
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, latest Phones */ 
+@media only screen and (min-width : 380px) {
+
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, Tablets Portrait */
+@media only screen and (min-width : 768px) {
+.home .content-bottom {
+  background-image   : url("../img/stock-photo-people-drinking-coffee-in-cafe-closeup-of-couple-hands-with-cups-428573581.jpg");
+}
+
+/* ------------------------------------------- */
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* ------------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px) {
+
+
+}

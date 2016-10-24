@@ -1,0 +1,127 @@
+/*  search bar stuff */
+
+.home .localservices-search--container{
+  background-color: rgb(255,255,255);
+  margin          : 0;
+  width           : 100%;
+  box-shadow      : 0px 1px 4px 2px rgba(128,128,128,0.5);
+  position        : fixed;
+  top             : 120px;
+}
+
+.localservices-search {
+  box-sizing        : content-box;
+  -webkit-appearance: textfield;
+  display           : block;
+  border            : none;
+  border-radius     : 30px;
+  background-color  : rgb(224,224,224);
+  color             : rgb(140,140,140);
+  text-align        : center;
+}
+
+::-webkit-input-placeholder {
+  color : rgb(151,156,156);
+}
+
+input::-moz-placeholder {
+  color : rgb(151,156,156);
+}
+
+/* ------------------------------ mobile first ------------------------------ */
+
+/* below 380px wide styles */
+
+@-moz-document url-prefix() {
+  .home .localservices-search--container{
+    top             : 110px;
+  }
+}
+
+.home .localservices-search {
+  width    : 85%;
+  height   : 36px;
+  font-size: 16px;
+  margin   : 10px auto;
+}
+
+.localservices-search {
+  height   : 45px;
+  font-size: 8vw;
+}
+
+/*.content-searchbar {
+  padding: 0 35px;
+}*/
+
+::-webkit-input-placeholder {
+  font-size  : 16px;
+  line-height: 18px;
+}
+
+input::-moz-placeholder {
+  font-size: 16px;
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, latest Phones */ 
+@media only screen and (min-width : 380px) {
+  @-moz-document url-prefix() {
+    .home .localservices-search--container{
+      top             : 130px;
+    }
+  }
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, Tablets Portrait */
+@media only screen and (min-width : 768px) {
+
+  @-moz-document url-prefix() {
+    .home .localservices-search--container{
+      top             : 111px;
+    }
+  }
+
+  .localservices-search {
+    font-size: 5vw;
+    width    : 85%;
+    margin   : auto;
+  }
+
+}
+
+/* ------------------------------------------- */
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  .localservices-search {
+      font-size: 3vw;
+      width    : 85%;
+      height   : 55px;
+      margin   : auto;
+  }
+
+/*  .content-searchbar .spacer {
+    height: 80px;
+  }
+
+  .content-searchbar {
+    padding: 0 110px;
+  }*/
+}
+
+/* ------------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px) {
+
+  .localservices-search {
+      font-size: 3vw;
+      height   : 75px;
+  }
+
+}

@@ -1,0 +1,123 @@
+
+.homepage_buttons {
+  margin-top    : 75px;
+  padding-bottom: 143px;
+  margin-left   : 35px;
+}
+
+.button_container {
+  text-align   : left;
+  margin-bottom: 30px;
+}
+
+.button_container img {
+  width : 65px;
+  height: 65px;
+  vertical-align: top;
+}
+
+.button_text {
+  display    : inline-block;
+  max-width  : 152px;
+  max-width  : 53%;  
+  font-size  : 6vw;
+  margin-left: 10px
+}
+
+.homepage_buttons p {
+  font-size: 4vw;
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, latest Phones */ 
+@media only screen and (min-width : 380px) {
+
+  .button_text {
+    max-width  : 66%;
+  }
+
+}
+/* ------------------------------------------- */
+
+/* Small Devices, Tablets Portrait */
+@media only screen and (min-width : 768px) {
+
+  /* -- */
+
+  .button_container {
+    display: inline-block;
+    min-width: 49%;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .homepage_buttons {
+    margin: 75px auto 0 auto;
+    width: 550px;
+    padding-bottom: 25px;
+  }
+
+  .homepage_buttons p {
+    font-size: 13px !important;
+  }
+  .button_text {
+    display   : block;
+    max-width  : 45%;
+    font-size  : 17px !important;
+    margin-top : 10px;
+    margin-left: 28%;
+    text-align : center;
+
+  }
+
+  .button_container img {
+      width : 85px;
+      height: 85px;
+  }
+
+}
+
+/* ------------------------------------------- */
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  /* - */
+
+  .homepage_buttons {
+    margin-top    : 78px;
+    margin-left   : 5%;
+    width         : 90%;
+    padding-bottom: 36PX;
+  }
+
+  .button_container {
+    display      : inline-block;
+    margin-bottom: 30px;
+    height       : 141px;
+    width        : 31%;
+    min-width    : initial;
+    text-align   : left;
+  }
+
+  .homepage_buttons p {
+      font-size: 1vw;
+  }
+
+  .button_container img {
+    width : 97px;
+    height: 97px;
+  }
+
+  .button_text {
+    display    : inline-block;
+    top        : -53px;
+    font-size  : 1.5vw;
+    margin-left: 15px;
+    height     : 150px;
+    max-width  : 54%;
+    text-align : left;
+  }
+
+}

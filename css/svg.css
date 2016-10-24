@@ -1,0 +1,18 @@
+/* svg down arrow graphics */
+
+.down_arrow {
+  width : 87px;
+  height: 87px;
+}
+
+.cls-1,.cls-2 {
+    fill  : none;
+    stroke: rgb(88,88,90); 
+    stroke-miterlimit: 10;
+    stroke-width     : 3px;
+}
+
+.cls-2 {
+  stroke-width  : 4px;
+  stroke-linecap: round;
+}
