@@ -45,7 +45,7 @@
       <div class="button_container">
         <a href="/your-stories/" class="no_decoration">
           <img src="<?php echo THEME_DIR;?>/img/button_download.png" />
-          <div class="button_text">Your Stories<p>Scotland/ Wales/ UK.</p>
+          <div class="button_text">Your Stories
           </div>
         </a>
       </div>

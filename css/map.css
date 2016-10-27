@@ -1,18 +1,27 @@
-/* -------------m a p   s t u f f ----------------- */
+/* styles unnafected by screen size */
+
+
+/* ------------------------------ mobile first ------------------------------ */
+
+/* below 380px wide styles */
 
 #map {
-
-  height: 76.5%;
+  height: 86.8%;
   margin-left: 38%;
 }
 
 .map_leftCol {
   position: absolute;
   width: 38%;
-  height: 76.5%;
+  height: 86.8%;
   background-color: #96D2D7;
   overflow-y: auto; 
 }
+
+
+
+
+
 
 .map_leftCol .localservices-search {
     background-color: #BCE1E1;
@@ -20,13 +29,13 @@
     width: 97%;
 }
 
+
 .map_leftCol input::-webkit-input-placeholder {
-  font-size  : 9px;
-  line-height: 12px;
+  font-size  : 20px;
 }
 
 .map_leftCol input::-moz-placeholder {
-  font-size: 9px;
+  font-size: 18px;
 }
 
 .service_details {
@@ -59,7 +68,9 @@
 
 /* -- search stuff -- */
 input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+
+
 
 .search_results {
   display: none;
@@ -75,3 +86,37 @@ input:focus:-moz-placeholder { color:transparent; }
 .search_results a:hover {
   text-decoration: underline;
 }
+
+.local-services .spacer  {
+  height: 10px;
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, latest Phones */ 
+@media only screen and (min-width : 380px) {
+
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, Tablets Portrait */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* ------------------------------------------- */
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* ------------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px) {
+
+
+}
+

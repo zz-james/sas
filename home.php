@@ -20,7 +20,7 @@
       }
       ?>
 
-      <?php get_template_part('partials/scroll-down'); ?>
+
     </div><!-- end content inner -->
   </div><!-- end content top -->
 
@@ -37,4 +37,7 @@
     </div>
   </div>
 
+<div class="content-top">
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
 <?php get_footer(); ?>

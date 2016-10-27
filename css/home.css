@@ -1,8 +1,19 @@
+/* styles unnafected by screen size */
+
 .home .content {
-  padding-top: 121px;
+  padding-top: 100px;
   color: rgb(88,88,90);  
   text-align: center;
 }
+
+.home .content-inner {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10vw 0;
+}
+
+.home .content-buttons-header {}
 
 .home .content-top {
   background-color: #98D2D7;
@@ -34,10 +45,11 @@
   background-color: rgba(255,255,255,0.7);
   color           : rgb(53,67,77);
   border-radius   : 10px;
+  padding         : 35px 0;
 }
 
 
-/* styles unnafected by screen size */
+
 
 
 /* ------------------------------ mobile first ------------------------------ */
@@ -45,7 +57,7 @@
 /* below 380px wide styles */
 .home .content-inner-top {
   width         : 75%;
-  margin-top    : 67px;
+  margin-top    : 60px;
   padding-bottom: 82px;
 }
 
@@ -60,6 +72,7 @@
 }
 
 .home .content-xl {
+  display      : block;
   font-size    : 6.6vw;
   line-height  : 11vw;
 }
@@ -72,25 +85,25 @@
 .home .down_arrow {
   margin-top: 62px;
 }
-
-
 .home .content-bottom {
-  background-size    : 100%;
-  padding-bottom     : 50px;
-  padding-top        : 25px;
+    background-size: 100%;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    margin-top: -146px;
 }
 
 .home .content-inner-bottom {
-  width      : 90%;
-  padding    : 5px 0 0 0;
-  margin-top : 160px;
+  width        : 78%;
+  padding-left : 0;
+  padding-right: 0;
+  margin-top   : 222px;
 }
 
 .home .content-buttons-header {
-  display: block;
+  display  : block;
   font-size: 6.5vw;
-  margin: auto; /* centre */
-  width: 55%;
+  margin   : auto; /* centre */
+  width    : 70%;
 }
 
 /* ------------------------------------------- */
@@ -104,15 +117,71 @@
 
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
-.home .content-bottom {
-  background-image   : url("../img/stock-photo-people-drinking-coffee-in-cafe-closeup-of-couple-hands-with-cups-428573581.jpg");
-}
+  .home .content-bottom {
+    background-image   : url("../img/stock-photo-people-drinking-coffee-in-cafe-closeup-of-couple-hands-with-cups-428573581.jpg");
+  }
 
+
+  .home .content-inner-top {
+      width: 57%;
+      padding-top: 100px;
+  }
+
+
+  .home .content-inner-top p {
+    font-size: 2.5vw;
+    line-height: 3.1vw;
+  }
+
+  .home .content-xl {
+    font-size    : 4.7vw;
+    line-height  : 11vw;
+  }
+
+  .home .content-ml {
+    font-size: 20px;
+    font-size: 2.7vw;
+  }
+
+  .home .content-inner-bottom {
+    padding: 0px 0;
+  }
+
+  .home .content-buttons-header {
+    font-size: 28px;
+  }
+
+}
 /* ------------------------------------------- */
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+  .home .content-inner-top {
+      width: 35%;
+      padding-top: 25px;
+  }
+  .home .content-inner-top p {
+    font-size: 1.6vw;
+    line-height: 1.9vw;
+  }
+  .home hr.content-divider-top {
+    margin: 15px 0;
+  }
+  .home .content-xl {
+      font-size  : 2.5vw;
+      line-height: 3vw;
+  }
+  .home .content-ml {
+      font-size: 20px;
+      font-size: 1.85vw;
+  }
+  .home .down_arrow {
+    margin-top: 31px;
+  }
+  .down_arrow {
+    width : 55px;
+    height: 55px;
+  }
 }
 
 /* ------------------------------------------- */
@@ -120,5 +189,20 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1700px) {
 
+  .home .content-inner-top {
+      width: 35%;
+      padding-top: 129px;
+  }
+
+.home .content-inner-top {
+    width: 69%;
+    max-width: initial;
+    padding-top: 129px;
+}
+
+.home .content-inner-top p {
+    font-size: 2.6vw;
+    line-height: 2.6vw;
+}
 
 }

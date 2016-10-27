@@ -8,27 +8,70 @@
 /* below 380px wide styles */
 
 
-.homepage_buttons {
-  padding-top    : 112px;
-  margin-left: 2vw;
+.topbar .homepage_buttons {
+  padding-top: calc(110px + 4.5vw);
+/*  margin-bottom: 1vw;*/
+  text-align: center;
+  box-shadow      : 0px 1px 4px 2px rgba(128,128,128,0.5);
+  border-bottom : 1px solid rgba(128,128,128,0.5);
+  padding-bottom: 2vw;
 }
 
-.button_container {
-  display: inline-block;
-  text-align   : center;
+.topbar .button_container {
+  display       : inline-block;
+  text-align    : center;
+  vertical-align: top; 
 }
 
-.button_container img {
-  width : 14vw;
-  height: 14vw;
+  .topbar .button_container {
+    padding-left: 3vw;
+  } 
+
+.topbar .button_container img {
+  width : 7vw;
+  height: 7vw;
 }
 
-.button_text {
+.topbar .button_text {
   font-size: 1.57vw;
 }
 
-.button_text p {
+.topbar .button_text p {
   display: none;
+}
+
+/* homepage buttons are different */
+.home .homepage_buttons {
+  padding-top : 68px;
+  margin-left : auto;
+  margin-right: auto;
+  width       : 60%;
+}
+
+.home .button_container {
+  display      : block;
+  text-align   : left;
+  margin-bottom: 17px;
+}
+
+.home .button_container img {
+  width : 18.5vw;
+  height: 18.5vw;
+  display: inline-block;
+}
+
+.home .button_text {
+  font-size      : 2.8vw;
+  display        : inline-block;
+  vertical-align : top;
+  margin-top     : 4px;
+  margin-left    : 12px;
+  width          : 50%;         
+}
+
+.home .button_text p {
+  display: block;
+  font-size      : 2.5vw;
 }
 
 /* ------------------------------------------- */
@@ -36,9 +79,7 @@
 /* Small Devices, latest Phones */ 
 @media only screen and (min-width : 380px) {
 
-  .button_text {
-    max-width  : 66%;
-  }
+
 
 }
 /* ------------------------------------------- */
@@ -48,36 +89,74 @@
 
   /* -- */
 
-  .button_container {
+
+  .topbar .homepage_buttons {
+    padding-top: 175px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+  }
+
+
+
+  .topbar .button_container {
+    margin: 0 1vw;
+    padding-left: 0
+  }
+
+  .topbar .button_container img {
+      width : 30px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: text-top;
+  }
+
+.topbar .button_text {
     display: inline-block;
-    min-width: 49%;
-    vertical-align: top;
+    font-size: 1.2vw
+}
+
+
+  /* homepage buttons are different */
+
+  .home .homepage_buttons {
+      padding-top: 57px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 65%;
+  }
+
+  .home .button_container {
+    display: inline-block;
+    min-width: initial;
+    width: 26.4vw;
     text-align: center;
   }
 
-  .homepage_buttons {
-    margin: 75px auto 0 auto;
-    width: 550px;
-    padding-bottom: 25px;
+  .home .button_container img {
+    min-width: 10px;
+    display: block;
   }
 
-  .homepage_buttons p {
-    font-size: 13px !important;
+  .home .button_container img {
+    width : 11.2vw;
+    height: 11.2vw;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .button_text {
-    display   : block;
-    max-width  : 45%;
-    font-size  : 17px !important;
-    margin-top : 10px;
-    margin-left: 28%;
-    text-align : center;
+
+  .home .button_text {
+    display: inline-block;
+    width  : initial;
+    font-size: 1.7vw;
 
   }
 
-  .button_container img {
-      width : 85px;
-      height: 85px;
+  .home .button_text p{
+    display: inline-block;
+    width  : initial;
+    font-size: 1.5vw;
   }
+
 
 }
 
@@ -86,41 +165,69 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-  /* - */
 
-  .homepage_buttons {
-    margin-top    : 78px;
-    margin-left   : 5%;
-    width         : 90%;
-    padding-bottom: 36PX;
+  .topbar .homepage_buttons {
+      padding-top: 84px;
+    padding-bottom: 10px;
   }
 
-  .button_container {
+  .topbar .button_container img {
+      width : 30px;
+      height: 30px;
+  }
+
+
+  /* homepage buttons are different */
+  .home .homepage_buttons {
+    padding-top : 81px;
+    margin-left : auto;
+    margin-right: auto;
+    width       : 75%;
+  }
+
+  .home .button_container {
     display      : inline-block;
-    margin-bottom: 30px;
-    height       : 141px;
-    width        : 31%;
-    min-width    : initial;
     text-align   : left;
+    margin-bottom: 17px;
+    width        : 19vw;
   }
 
-  .homepage_buttons p {
-      font-size: 1vw;
+  .home .button_container img {
+    width : 7vw;
+    height: 7vw;
+    display: inline-block;
   }
 
-  .button_container img {
-    width : 97px;
-    height: 97px;
+  .home .button_text {
+    font-size      : 1.5vw;
+    display        : inline-block;
+    vertical-align : top;
+    margin-top     : 4px;
+    margin-left    : 12px;
+    width          : 50%;         
   }
 
-  .button_text {
-    display    : inline-block;
-    top        : -53px;
-    font-size  : 1.5vw;
-    margin-left: 15px;
-    height     : 150px;
-    max-width  : 54%;
-    text-align : left;
+  .home .button_text p {
+    display: block;
+    font-size      : 1.1vw;
   }
 
+}
+
+/* ------------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px) {
+
+  .topbar .button_container img {
+      width : 50px;
+      height: 50px;
+      display: inline-block;
+      vertical-align: middle;
+  }
+
+  /* homepage buttons are different */
+  .topbar .homepage_buttons {
+      padding-top: 109px;
+  }
 }

@@ -2,13 +2,18 @@
 <!-- The local services template file -->
 <?php get_header(); ?>
 
+<div class="topbar">  
 <?php get_template_part('partials/buttons'); ?>
+</div>
 
   <div id="left_col" class="map_leftCol">
 
     <div class="spacer"></div>
     <input type=search name=s class="localservices-search" placeholder="search for a local service..." id="js_searchbar">
     <div class="spacer"></div>
+    <div style="text-align: center;margin-bottom: 5px">
+    <p>Or <a target="pop" href="http://staging.supportaftersuicide.org.uk/wp-content/uploads/2016/10/regional-list-of-services1.pdf">download our services guide (pdf)</a></p>
+    </div>
 
     <!-- card for search result -->
     <div class="search_results" id="js_search_results"></div>
@@ -33,8 +38,6 @@
     </div>
     <!-- end card for service detail  -->
 
-  </div>
-
-  <div id="map"><span class="loading">loading tiles...</span></div>
+  </div><div id="map"><span class="loading">loading tiles...</span></div>
 
 <?php get_footer(); ?>

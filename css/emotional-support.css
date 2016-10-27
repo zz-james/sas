@@ -1,47 +1,58 @@
 /* styles unnafected by screen size */
 
 .emotional-support .content {
-  background-color: #fff;
-  color: rgb(88,88,90);  
+    background-color: rgb(233,90,79);
+background-image: url(../img/emotional_support_background.png);
+}
+
+.practical-support .content {
+    background-color: rgb(18,176,186);
+background-image: url(../img/practical_background.png);
+}
+
+.helping-someone-else .content {
+    background-color: rgb(237,147,105);
+background-image: url(../img/someoneelse_background.png);
+}
+
+.what-to-say .content {
+    background-color: rgb(46,148,168);
+background-image: url(../img/what_to_say_background.png);
+}
+
+.witnesses .content {
+    background-color: rgb(233,90,79);
+background-image: url(../img/witness_background.png);
+}
+
+.i-didnt-even-know-the-person .content {
+    background-color: rgb(233,90,79);
+background-image: url(../img/witness_background.png);
+}
+
+.your-stories .content {
+    background-color: rgb(112,114,159);
+background-image: url(../img/stories_background.png);
+}
+
+.who-we-are .content {
+    background-color: rgb(152,210,215);
+background-image: url(../img/whoweare_background.png);
+}
+
+
+.extra_buttons {
+  display: inline-block;
+  margin: 0 auto;
+  width: 66%;
   text-align: center;
 }
-
-.emotional-support .content-top {
-  background-color: #fff;
-};
-
-.emotional-support .content-inner .page_header{
-  border-bottom: 2px solid black;
-}
+.extra_buttons img{display: inline-block;margin-right: 10px}
 
 /* ------------------------------ mobile first ------------------------------ */
 
 /* below 380px wide styles */
-.emotional-support .content-top {
-  padding-top: 0;
-}
 
-.emotional-support .content-inner {
-  padding-bottom: 0px;
-  margin-top: 0px;
-}
-
-.emotional-support .content-inner .content-inner-top {
-  margin-top: 0;
-}
-.emotional-support .content-inner .page_header{
-  width: 75%;
-  margin: 0 auto;
-  padding: 0 0;
-}
-
-.emotional-support .content-top p {
-  font-size: initial;
-}
-
-.emotional-support .spacer {
-    height: 0px;
-}
 
 /* ------------------------------------------- */
 

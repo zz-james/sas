@@ -1,22 +1,22 @@
 
 /* text heavy pages */
 
-.page-template-default .content-inner {
+/*.page-template-default .content-inner {
   background-color: rgba(255,255,255,0.3);
   color: rgb(53,67,77);
   border-radius: 10px;
   padding-bottom: 10px;
   margin-top: 240px;
   max-width: 1000px;
-}
+}*/
 
 
 
 
-.page-template-default p {
+/*.page-template-default p {
   width: 75%;
   margin: 0 auto;
-}
+}*/
 
 /*.page .content-top p {
   font-size: 25px !important;
@@ -99,9 +99,9 @@
 
 
 /* highly temporary */
-.page-template-default .content-inner{
+/*.page-template-default .content-inner{
 
-}
+}*/
 
 .page-template-default .content-inner .page_header{
   border-bottom: 2px solid black;
