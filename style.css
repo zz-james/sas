@@ -20,9 +20,10 @@ Description: Theme file for Support After Suicide
 @import 'css/searchbar.css';
 @import 'css/button.css';
 @import 'css/map.css';
+@import 'css/stories.css';
 @import 'css/svg.css';
 @import 'css/content.css';
-@import 'css/emotional-support.css';
+@import 'css/colours.css';
 @import 'css/home.css';
 
 

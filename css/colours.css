@@ -1,53 +1,49 @@
 /* styles unnafected by screen size */
 
 .emotional-support .content {
-    background-color: rgb(233,90,79);
-background-image: url(../img/emotional_support_background.png);
+  background-color: rgb(233,90,79);
+  background-image: url(../img/emotional_support_background.png);
 }
 
 .practical-support .content {
-    background-color: rgb(18,176,186);
-background-image: url(../img/practical_background.png);
+  background-color: rgb(18,176,186);
+  background-image: url(../img/practical_background.png);
 }
 
 .helping-someone-else .content {
-    background-color: rgb(237,147,105);
-background-image: url(../img/someoneelse_background.png);
+  background-color: rgb(237,147,105);
+  background-image: url(../img/someoneelse_background.png);
 }
 
 .what-to-say .content {
-    background-color: rgb(46,148,168);
-background-image: url(../img/what_to_say_background.png);
+  background-color: rgb(46,148,168);
+  background-image: url(../img/what_to_say_background.png);
 }
 
 .witnesses .content {
-    background-color: rgb(233,90,79);
-background-image: url(../img/witness_background.png);
+  background-color: rgb(233,90,79);
+  background-image: url(../img/witness_background.png);
 }
 
 .i-didnt-even-know-the-person .content {
-    background-color: rgb(233,90,79);
-background-image: url(../img/witness_background.png);
+  background-color: rgb(233,90,79);
+  background-image: url(../img/witness_background.png);
 }
 
 .your-stories .content {
-    background-color: rgb(112,114,159);
-background-image: url(../img/stories_background.png);
+  background-color: rgb(112,114,159);
+  background-image: url(../img/stories_background.png);
 }
 
 .who-we-are .content {
-    background-color: rgb(152,210,215);
-background-image: url(../img/whoweare_background.png);
+  background-color: rgb(152,210,215);
+  background-image: url(../img/whoweare_background.png);
 }
 
-
-.extra_buttons {
-  display: inline-block;
-  margin: 0 auto;
-  width: 66%;
-  text-align: center;
+.page-template-default_blue .content{
+  background-color: rgb(152,210,215) !important;
+  background-image: url(../img/whoweare_background.png) !important;
 }
-.extra_buttons img{display: inline-block;margin-right: 10px}
 
 /* ------------------------------ mobile first ------------------------------ */
 

@@ -20,7 +20,10 @@
 
 
 
-
+.map_instructions {
+  margin: 0 50px;
+  font-size: 18px;
+}
 
 
 .map_leftCol .localservices-search {

@@ -52,9 +52,10 @@ td {
     text-align: left;
 }
 
-.page-template-default .content-top {
+.your-stories .content-top, .page-template-default .content-top {
     background-color: rgba(255,255,255,0.85);
     width: 61%;
+    height:100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -83,6 +84,56 @@ td {
     height: 0px;
 }
 
+/* --- whoops -- */
+
+.page-template-default_blue h3 {
+  font-size: 2em;
+}
+.page-template-default_blue strong {
+  font-size: 1.5em;
+}
+
+.page-template-default_blue h4 {
+  font-size: 1.5em;
+}
+.page-template-default_blue .content {
+    color: rgb(88,88,90);
+    text-align: left;
+}
+
+.your-stories .content-top, .page-template-default_blue .content-top {
+    background-color: rgba(255,255,255,0.85);
+    width: 61%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-template-default_blue .content-top {
+
+}
+
+.page-template-default_blue .content-inner {
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
+
+.page-template-default_blue .content-inner {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.page-template-default_blue .content-top p {
+  font-size: initial;
+}
+
+.page-template-default_blue .spacer {
+    height: 0px;
+}
+
+/* -- un whoops --*/
 
 .content-inner .page_header{
   border-bottom: 2px solid black;
@@ -113,6 +164,11 @@ td {
 
 .spacer {
     height: 0px;
+}
+
+.whowearebuttons div {
+  width: 22% !important;
+  display: inline-block;
 }
 
 /* ------------------------------------------- */

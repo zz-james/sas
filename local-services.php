@@ -9,11 +9,25 @@
   <div id="left_col" class="map_leftCol">
 
     <div class="spacer"></div>
-    <input type=search name=s class="localservices-search" placeholder="search for a local service..." id="js_searchbar">
+
+    <div class="map map_instructions">
+      <?php
+      if ( have_posts() ) {
+          while ( have_posts() ) {
+              the_post();
+              the_content();
+          }
+      }
+      ?>
+    </div>
+
+    <input type=search name=s class="localservices-search" placeholder="Enter your postcode to find local support" id="js_searchbar">
     <div class="spacer"></div>
     <div style="text-align: center;margin-bottom: 5px">
-    <p>Or <a target="pop" href="http://staging.supportaftersuicide.org.uk/wp-content/uploads/2016/10/regional-list-of-services1.pdf">download our services guide (pdf)</a></p>
+    <p>Or <a target="pop" href="http://staging.supportaftersuicide.org.uk/wp-content/uploads/2016/10/regional-list-of-services1.pdf">view a list of local services by region (pdf)</a></p>
     </div>
+
+
 
     <!-- card for search result -->
     <div class="search_results" id="js_search_results"></div>

@@ -2,6 +2,14 @@
 /* styles unnafected by screen size */
 
 
+/* this last minute additions */
+.extra_buttons {
+  display: inline-block;
+  margin: 0 auto;
+  width: 66%;
+  text-align: center;
+}
+.extra_buttons img{display: inline-block;margin-right: 10px}
 
 /* ------------------------------ mobile first ------------------------------ */
 
