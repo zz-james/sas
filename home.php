@@ -2,9 +2,7 @@
 <!-- The home-page template file -->
 <?php get_header(); ?>
 
-<div class="localservices-search--container">
-  <input type=search name=s class="localservices-search" id="js_searchbar_home" placeholder="Enter your postcode to find local support">
-</div>
+
 
 <div class="content">
 
@@ -15,7 +13,7 @@
       if ( have_posts() ) {
           while ( have_posts() ) {
               the_post();
-              the_content();
+              //the_content();
           }
       }
       ?>
@@ -24,20 +22,22 @@
     </div><!-- end content inner -->
   </div><!-- end content top -->
 
-
-
-  <div class="content-bottom" id="start">
+<!--   <div class="content-bottom" id="start">
     <div class="content-inner content-inner-bottom">
       <span class="content-buttons-header">
         Choose from the topics below
       </span>
 
-      <?php get_template_part('partials/buttons'); ?>
+      <?php //get_template_part('partials/buttons'); ?>
 
     </div>
-  </div>
+  </div> -->
 
-<div class="content-top">
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-</div>
+
+<!--   <div style="padding: 100px 0;background: #98D2D7;">
+    <div style="width:75%;margin-left: auto;margin-right: auto">
+      <div class="footer">&nbsp;</div>
+    </div>
+  </div> -->
+
 <?php get_footer(); ?>

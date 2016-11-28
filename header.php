@@ -28,17 +28,22 @@
     <link rel="stylesheet" id="screen-style-css" href="wp-content/themes/sas/style.css" type="text/css" media="all">
   </head>
   <?php global $post; ?>
-  <body <?php body_class($post->post_name); ?> >
-
-    <div id="menu" class="menubar">
-      <div class="menubar-inner">
-        <a href="/" class="menubar--logo"></a>
-        <ul class="menubar--mainnav"><!-- whitespace between </li> and <li> is shown so leave this perculiar spacing -->
-          <li><a href="/#start">Home</a></li><li>
-          <a href="/local-services/">Local Services</a></li><li>
-          <a href="/support-guides/">Support Guides</a></li><li>
-          <a href="/who-we-are/">Who We Are</a></li><li>
-          <a href="/contact/">Contact</a></li>
-        </ul>
+  <body <?php //body_class($post->post_name); ?> class="home">
+    <div class="fixed fullwidth">
+      <div id="menu" class="menubar">
+        <div class="menubar-inner">
+          <a href="/" class="menubar--logo"></a>
+          <ul class="menubar--mainnav"><!-- whitespace between </li> and <li> is shown so leave this perculiar spacing in the source code -->
+            <li class="no-mobile"><a href="/#start">Home</a></li><li>
+            <a href="/local-services/">Local Support</a></li><li>
+            <a href="/support-guides/">Support Guides</a></li><li>
+            <a href="/who-we-are/">Who We Are</a></li><li>
+            <a href=" /press-and-media/ ">Press & Media</a></li><li>
+            <a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="localservices-search--container">
+        <input type=search name=s class="localservices-search" id="js_searchbar_home" placeholder="Enter your postcode to find local support">
       </div>
     </div>

@@ -20,15 +20,54 @@
   height: 38px;
 }*/
 
+a {
+  text-decoration: none;
+  color: rgba(120,120,120,1);
+}
+
 td {
-  font-size: initial;
+  font-size: 20px;
 
 
 }
 
+li {
+  font-size: 18px ;
+  line-height: 22px;
+  margin-bottom: 9px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.contact input {
+  width: 100%;
+  height: 30px;
+  font-size: 25px;
+}
+.contact textarea {
+  width: 100%;
+  height: 200px;
+  font-size: 25px;
+}
+
+.what-to-say-buttons div {
+  width: 20% !important;
+}
+
+.bio {
+  display: block;
+  margin-left: 300px;
+}
+
 .content {
   background-color: #fff;
-  color: rgb(88,88,90);  
+  color: rgb(50,50,50);  
   text-align: left;
 }
 
@@ -41,24 +80,39 @@ td {
   font-size: 2em;
 }
 .page-template-default strong {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .page-template-default h4 {
   font-size: 1.5em;
 }
 .page-template-default .content {
-    color: rgb(88,88,90);
+    color: rgb(50,50,50);
     text-align: left;
 }
 
 .your-stories .content-top, .page-template-default .content-top {
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255,255,255,0.75);
+/*    background-image: url(../img/stock-photo-people-drinking-coffee-in-cafe-closeup-of-couple-hands-with-cups-opaque.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 274px;*/
     width: 61%;
-    height:100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
+
 }
+
+.what-to-say-buttons {
+  width: 100%;
+  text-align: center;
+}
+
+.what-to-say-buttons div {
+  margin-left: 10%;
+}
+
 
 .page-template-default .content-top {
 
@@ -76,8 +130,8 @@ td {
   padding: 10px 0;
 }
 
-.page-template-default .content-top p {
-  font-size: initial;
+.content-top p {
+  font-size: 18px !important;
 }
 
 .page-template-default .spacer {
@@ -143,6 +197,12 @@ td {
 
 /* below 380px wide styles */
 
+.no-mobile {
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
 .content-top {
   padding-top: 0;
 }
@@ -176,6 +236,12 @@ td {
 
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
+
+  .no-mobile {
+    visibility: initial !important;
+    width: initial !important;
+    height: initial !important;
+  }
 
   .content-inner-top {
     width: 64%;

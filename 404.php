@@ -1,3 +1,11 @@
+<?php
+
+load_template( "/Users/james/Projects/sas/wp-content/themes/sas/home.php" );
+
+
+exit();
+?>
+
 <?php /* Template Name: Home Page */ ?>
 <!-- The home-page template file -->
 <?php get_header(); ?>
@@ -19,22 +27,12 @@
           }
       }
       ?>
+      <p>This page does not exist, sorry!</p>
 
-      <?php get_template_part('partials/scroll-down'); ?>
+      <p>Please use the menu options above to navigate to another page.</p>
+
     </div><!-- end content inner -->
   </div><!-- end content top -->
 
-
-
-  <div class="content-bottom" id="start">
-    <div class="content-inner content-inner-bottom">
-      <span class="content-buttons-header">
-        Choose from the topics below
-      </span>
-
-      <?php get_template_part('partials/buttons'); ?>
-
-    </div>
-  </div>
 
 <?php get_footer(); ?>
