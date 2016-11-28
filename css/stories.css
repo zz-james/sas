@@ -11,20 +11,6 @@
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-image: url(http://subtlepatterns.com/patterns/dark_wall.png);
-    background-repeat: repeat;
-    height: 500px;
-    padding: 1px;
-}
-
-h1 { color: white }
-
 #slideshow-wrap {
     display: block;
     position: relative;
@@ -42,10 +28,11 @@ h1 { color: white }
 
 #slideshow-inner>ul {
     list-style: none;
-    width: 500%;
+    width: 2200%;
     overflow: hidden;
     position: relative;
     left: 0px;
+    padding-left: 0px;
     -webkit-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
     -moz-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
     -o-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
@@ -53,7 +40,7 @@ h1 { color: white }
 }
 
 #slideshow-inner>ul>li {
-    width: 20%;
+    width: 4.54%;
     float: left;
     position: relative;
 }
@@ -68,7 +55,7 @@ h1 { color: white }
 
 #slideshow-wrap label:not(.arrows):not(.show-description-label) {
     position: absolute;
-    left: 50%;
+    left: 27%;
     bottom: -45px;
     z-index: 100;
     width: 12px;
@@ -99,6 +86,39 @@ h1 { color: white }
 
 #slideshow-wrap input[type=radio]#button-5:checked~label[for=button-5] { background-color: rgba(100,100,100,1) }
 
+#slideshow-wrap input[type=radio]#button-6:checked~label[for=button-6] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-7:checked~label[for=button-7] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-8:checked~label[for=button-8] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-9:checked~label[for=button-9] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-10:checked~label[for=button-10] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-11:checked~label[for=button-11] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-12:checked~label[for=button-12] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-13:checked~label[for=button-13] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-14:checked~label[for=button-14] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-15:checked~label[for=button-15] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-16:checked~label[for=button-16] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-17:checked~label[for=button-17] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-18:checked~label[for=button-18] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-19:checked~label[for=button-19] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-20:checked~label[for=button-20] { background-color: rgba(100,100,100,1) }
+
+#slideshow-wrap input[type=radio]#button-21:checked~label[for=button-21] { background-color: rgba(100,100,100,1) }
+
+
 #slideshow-wrap label[for=button-1] { margin-left: -36px }
 
 #slideshow-wrap label[for=button-2] { margin-left: -18px }
@@ -106,6 +126,42 @@ h1 { color: white }
 #slideshow-wrap label[for=button-4] { margin-left: 18px }
 
 #slideshow-wrap label[for=button-5] { margin-left: 36px }
+
+#slideshow-wrap label[for=button-6] { margin-left: 54px }
+
+#slideshow-wrap label[for=button-7] { margin-left: 72px }
+
+#slideshow-wrap label[for=button-8] { margin-left: 90px }
+
+#slideshow-wrap label[for=button-9] { margin-left: 108px }
+
+#slideshow-wrap label[for=button-10] { margin-left: 126px }
+
+#slideshow-wrap label[for=button-11] { margin-left: 144px }
+
+#slideshow-wrap label[for=button-12] { margin-left: 162px }
+
+#slideshow-wrap label[for=button-13] { margin-left: 180px }
+
+#slideshow-wrap label[for=button-14] { margin-left: 198px }
+
+#slideshow-wrap label[for=button-15] { margin-left: 216px }
+
+#slideshow-wrap label[for=button-16] { margin-left: 234px }
+
+#slideshow-wrap label[for=button-17] { margin-left: 252px }
+
+#slideshow-wrap label[for=button-18] { margin-left: 270px }
+
+#slideshow-wrap label[for=button-19] { margin-left: 288px }
+
+#slideshow-wrap label[for=button-20] { margin-left: 306px }
+
+#slideshow-wrap label[for=button-21] { margin-left: 324px }
+
+
+
+
 
 #slideshow-wrap input[type=radio]#button-1:checked~#slideshow-inner>ul { left: 0 }
 
@@ -116,6 +172,39 @@ h1 { color: white }
 #slideshow-wrap input[type=radio]#button-4:checked~#slideshow-inner>ul { left: -300% }
 
 #slideshow-wrap input[type=radio]#button-5:checked~#slideshow-inner>ul { left: -400% }
+
+#slideshow-wrap input[type=radio]#button-6:checked~#slideshow-inner>ul { left: -500% }
+
+#slideshow-wrap input[type=radio]#button-7:checked~#slideshow-inner>ul { left: -600% }
+
+#slideshow-wrap input[type=radio]#button-8:checked~#slideshow-inner>ul { left: -700% }
+
+#slideshow-wrap input[type=radio]#button-9:checked~#slideshow-inner>ul { left: -800% }
+
+#slideshow-wrap input[type=radio]#button-10:checked~#slideshow-inner>ul { left: -900% }
+
+#slideshow-wrap input[type=radio]#button-11:checked~#slideshow-inner>ul { left: -1000% }
+
+#slideshow-wrap input[type=radio]#button-12:checked~#slideshow-inner>ul { left: -1100% }
+
+#slideshow-wrap input[type=radio]#button-13:checked~#slideshow-inner>ul { left: -1200% }
+
+#slideshow-wrap input[type=radio]#button-14:checked~#slideshow-inner>ul { left: -1300% }
+
+#slideshow-wrap input[type=radio]#button-15:checked~#slideshow-inner>ul { left: -1400% }
+
+#slideshow-wrap input[type=radio]#button-16:checked~#slideshow-inner>ul { left: -1500% }
+
+#slideshow-wrap input[type=radio]#button-17:checked~#slideshow-inner>ul { left: -1600% }
+
+#slideshow-wrap input[type=radio]#button-18:checked~#slideshow-inner>ul { left: -1700% }
+
+#slideshow-wrap input[type=radio]#button-19:checked~#slideshow-inner>ul { left: -1800% }
+
+#slideshow-wrap input[type=radio]#button-20:checked~#slideshow-inner>ul { left: -1900% }
+
+#slideshow-wrap input[type=radio]#button-21:checked~#slideshow-inner>ul { left: -2000% }
+
 
 label.arrows {
     font-family: 'WebSymbolsRegular';
@@ -140,12 +229,52 @@ label.arrows:hover { opacity: 1 }
 
 label.arrows:active { margin-top: -23px }
 
-input[type=radio]#button-1:checked~.arrows#arrow-2, input[type=radio]#button-2:checked~.arrows#arrow-3, input[type=radio]#button-3:checked~.arrows#arrow-4, input[type=radio]#button-4:checked~.arrows#arrow-5 {
+input[type=radio]#button-1:checked~.arrows#arrow-2, 
+input[type=radio]#button-2:checked~.arrows#arrow-3, 
+input[type=radio]#button-3:checked~.arrows#arrow-4, 
+input[type=radio]#button-4:checked~.arrows#arrow-5, 
+input[type=radio]#button-5:checked~.arrows#arrow-6, 
+input[type=radio]#button-6:checked~.arrows#arrow-7, 
+input[type=radio]#button-7:checked~.arrows#arrow-8, 
+input[type=radio]#button-8:checked~.arrows#arrow-9,
+input[type=radio]#button-9:checked~.arrows#arrow-10, 
+input[type=radio]#button-10:checked~.arrows#arrow-11, 
+input[type=radio]#button-11:checked~.arrows#arrow-12, 
+input[type=radio]#button-12:checked~.arrows#arrow-13,
+input[type=radio]#button-13:checked~.arrows#arrow-14, 
+input[type=radio]#button-14:checked~.arrows#arrow-15, 
+input[type=radio]#button-15:checked~.arrows#arrow-16, 
+input[type=radio]#button-16:checked~.arrows#arrow-17,
+input[type=radio]#button-17:checked~.arrows#arrow-18,
+input[type=radio]#button-18:checked~.arrows#arrow-19, 
+input[type=radio]#button-19:checked~.arrows#arrow-20, 
+input[type=radio]#button-20:checked~.arrows#arrow-21
+{
     right: -40%;
     display: block;
 }
 
-input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:checked~.arrows#arrow-2, input[type=radio]#button-4:checked~.arrows#arrow-3, input[type=radio]#button-5:checked~.arrows#arrow-4 {
+input[type=radio]#button-2:checked~.arrows#arrow-1, 
+input[type=radio]#button-3:checked~.arrows#arrow-2, 
+input[type=radio]#button-4:checked~.arrows#arrow-3, 
+input[type=radio]#button-5:checked~.arrows#arrow-4, 
+input[type=radio]#button-6:checked~.arrows#arrow-5, 
+input[type=radio]#button-7:checked~.arrows#arrow-6, 
+input[type=radio]#button-8:checked~.arrows#arrow-7, 
+input[type=radio]#button-9:checked~.arrows#arrow-8, 
+input[type=radio]#button-10:checked~.arrows#arrow-9, 
+input[type=radio]#button-11:checked~.arrows#arrow-10, 
+input[type=radio]#button-12:checked~.arrows#arrow-11, 
+input[type=radio]#button-13:checked~.arrows#arrow-12, 
+input[type=radio]#button-14:checked~.arrows#arrow-13, 
+input[type=radio]#button-15:checked~.arrows#arrow-14, 
+input[type=radio]#button-16:checked~.arrows#arrow-15, 
+input[type=radio]#button-17:checked~.arrows#arrow-16, 
+input[type=radio]#button-18:checked~.arrows#arrow-17, 
+input[type=radio]#button-19:checked~.arrows#arrow-18, 
+input[type=radio]#button-20:checked~.arrows#arrow-19, 
+input[type=radio]#button-21:checked~.arrows#arrow-20
+{
     left: calc(-40% - 36px);
     display: block;
     -webkit-transform: scaleX(-1);
@@ -155,21 +284,33 @@ input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:c
     transform: scaleX(-1);
 }
 
-input[type=radio]#button-2:checked~.arrows#arrow-1 { left: -40% !important}
-
-input[type=radio]#button-3:checked~.arrows#arrow-2 { left: calc(-40% - 18px) !important}
-
-input[type=radio]#button-3:checked~.arrows#arrow-3 { left: calc(-40% - 18px) !important}
-
-input[type=radio]#button-5:checked~.arrows#arrow-4 { left: calc(-40% - 54px) !important}
+input[type=radio]#button-2:checked~.arrows#arrow-1   { left: -40% !important}
+input[type=radio]#button-3:checked~.arrows#arrow-2   { left: calc(-40% - 18px) !important}
+input[type=radio]#button-4:checked~.arrows#arrow-3   { left: calc(-40% - 36px) !important}
+input[type=radio]#button-5:checked~.arrows#arrow-4   { left: calc(-40% - 54px) !important}
+input[type=radio]#button-6:checked~.arrows#arrow-5   { left: calc(-40% - 72px) !important}
+input[type=radio]#button-7:checked~.arrows#arrow-6   { left: calc(-40% - 90px) !important}
+input[type=radio]#button-8:checked~.arrows#arrow-7   { left: calc(-40% - 108px) !important}
+input[type=radio]#button-9:checked~.arrows#arrow-8   { left: calc(-40% - 126px) !important}
+input[type=radio]#button-10:checked~.arrows#arrow-9  { left: calc(-40% - 144px) !important}
+input[type=radio]#button-11:checked~.arrows#arrow-10 { left: calc(-40% - 162px) !important}
+input[type=radio]#button-12:checked~.arrows#arrow-11 { left: calc(-40% - 180px) !important}
+input[type=radio]#button-13:checked~.arrows#arrow-12 { left: calc(-40% - 198px) !important}
+input[type=radio]#button-14:checked~.arrows#arrow-13 { left: calc(-40% - 216px) !important}
+input[type=radio]#button-15:checked~.arrows#arrow-14 { left: calc(-40% - 234px) !important}
+input[type=radio]#button-16:checked~.arrows#arrow-15 { left: calc(-40% - 252px) !important}
+input[type=radio]#button-17:checked~.arrows#arrow-16 { left: calc(-40% - 270px) !important}
+input[type=radio]#button-18:checked~.arrows#arrow-17 { left: calc(-40% - 288px) !important}
+input[type=radio]#button-19:checked~.arrows#arrow-18 { left: calc(-40% - 306px) !important}
+input[type=radio]#button-20:checked~.arrows#arrow-19 { left: calc(-40% - 324px) !important}
 
 
 .description {
 
 }
 
-.description .description-text {
-
+.description .description-text img {
+    width: 100%;
 }
 
 /* ------------------------------ mobile first ------------------------------ */

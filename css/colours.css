@@ -2,32 +2,113 @@
 
 .emotional-support .content {
   background-color: rgb(233,90,79);
-  background-image: url(../img/emotional_support_background.png);
+  background: 
+    url(../img/emotional_support_resized.png),
+    url(../img/emotional_support_background.png);
+  background-repeat: 
+    no-repeat,
+    repeat;
+  background-size:
+    contain,
+    auto;
+  background-position: 
+    0px 160px,
+    0 0;
 }
+
+
+.what-to-say .content {
+
+  background-color: rgb(46,148,16);
+  background: 
+    url(../img/emotional_support_resized.png),
+    url(../img/what_to_say_background.png);
+  background-repeat: 
+    no-repeat,
+    repeat;
+  background-size:
+    contain,
+    auto;
+  background-position: 
+    0px 160px,
+    0 0;
+
+}
+
+
 
 .practical-support .content {
   background-color: rgb(18,176,186);
-  background-image: url(../img/practical_background.png);
+  background: 
+    url(../img/practical_support_resized.png),
+    url(../img/practical_background.png);
+  background-repeat: 
+    no-repeat,
+    repeat;
+  background-size:
+    contain,
+    auto;
+  background-position: 
+    0px 360px,
+    0 0;
+
 }
 
 .helping-someone-else .content {
-  background-color: rgb(237,147,105);
-  background-image: url(../img/someoneelse_background.png);
+  background-color: rgb(233,147,105);
+  background: 
+    url(../img/supporting_someone_else_resized.png),
+    url(../img/emotional_support_background.png);
+  background-repeat: 
+    no-repeat,
+    repeat;
+  background-size:
+    contain,
+    auto;
+  background-position: 
+    0px 160px,
+    0 0;
 }
 
-.what-to-say .content {
-  background-color: rgb(46,148,168);
-  background-image: url(../img/what_to_say_background.png);
-}
 
-.witnesses .content {
-  background-color: rgb(233,90,79);
-  background-image: url(../img/witness_background.png);
+.talking-to-children .content {
+  background-color: rgb(46,148,168) !important;
+  background: 
+    url(../img/talking_to_children_resized.png),
+    url(../img/what_to_say_background.png) !important;
+  background-repeat: 
+    no-repeat,
+    repeat !important;
+  background-size:
+    contain,
+    auto !important;
+  background-position: 
+    0px 360px,
+    0 0 !important;
+
+}
+ 
+
+
+.i-didnt-even-know-the-person .content, .witnesses .content {
+
+  background-color: rgb(233,90,79) !important;
+  background: 
+    url(../img/talking_to_children_resized.png),
+    url(../img/witness_background.png) !important;
+  background-repeat: 
+    no-repeat,
+    repeat !important;
+  background-size:
+    contain,
+    auto !important;
+  background-position: 
+    0px 45px,
+    0 0 !important;
 }
 
 .i-didnt-even-know-the-person .content {
-  background-color: rgb(233,90,79);
-  background-image: url(../img/witness_background.png);
+
 }
 
 .your-stories .content {
@@ -45,10 +126,35 @@
   background-image: url(../img/whoweare_background.png) !important;
 }
 
+.local-services p {
+  color:rgb(120,120,120);
+  font-size: 22px;
+}
+
 /* ------------------------------ mobile first ------------------------------ */
 
+
+.support-guides .content-inner-top {
+  max-width: initial !important;
+}
+
+.support-guides  .content-top {
+  width: 75% !important;
+}
 /* below 380px wide styles */
 
+.i-didnt-even-know-the-person .extra_buttons .wp-caption {
+  text-align: center;
+  width: 30% !important;
+}
+
+.i-didnt-even-know-the-person .extra_buttons p {
+  text-align: center;
+}
+
+.whowearebuttons p {
+  text-align: center;
+}
 
 /* ------------------------------------------- */
 

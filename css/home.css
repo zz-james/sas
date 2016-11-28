@@ -21,7 +21,7 @@
 }
 
 .home .content-bottom {
-  background-color   : #79C3BF;
+    background-color: #98D2D7;
   background-image   : url("../img/content-top-bg.gif");
   background-repeat  : no-repeat;
   background-position: left top;  
@@ -49,7 +49,12 @@
 }
 
 
-
+.home .footer {
+  background-image: url("../img/sas_logos.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1000px;
+}
 
 
 /* ------------------------------ mobile first ------------------------------ */
@@ -97,6 +102,7 @@
   padding-left : 0;
   padding-right: 0;
   margin-top   : 222px;
+  margin-bottom: 199px;
 }
 
 .home .content-buttons-header {
@@ -117,8 +123,17 @@
 
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
+
   .home .content-bottom {
-    background-image   : url("../img/stock-photo-people-drinking-coffee-in-cafe-closeup-of-couple-hands-with-cups-428573581.jpg");
+    background: 
+      url(../img/coffee_resized.png);
+    background-repeat: 
+      no-repeat;
+    background-size:
+      cover;
+    background-position: 
+      0px 0px;
+    background-color: #98D2D7;
   }
 
 
@@ -144,7 +159,7 @@
   }
 
   .home .content-inner-bottom {
-    padding: 0px 0;
+    padding: 38px 0 0 0;
   }
 
   .home .content-buttons-header {
@@ -157,11 +172,11 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   .home .content-inner-top {
-      width: 35%;
+      width: 65%;
       padding-top: 25px;
   }
   .home .content-inner-top p {
-    font-size: 1.6vw;
+    font-size: 2vw;
     line-height: 1.9vw;
   }
   .home hr.content-divider-top {
@@ -194,15 +209,15 @@
       padding-top: 129px;
   }
 
-.home .content-inner-top {
-    width: 69%;
-    max-width: initial;
-    padding-top: 129px;
-}
+  .home .content-inner-top {
+      width: 69%;
+      max-width: initial;
+      padding-top: 129px;
+  }
 
-.home .content-inner-top p {
-    font-size: 2.6vw;
-    line-height: 2.6vw;
-}
+  .home .content-inner-top p {
+      font-size: 2.6vw;
+      line-height: 2.6vw;
+  }
 
 }

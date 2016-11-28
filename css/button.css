@@ -2,14 +2,6 @@
 /* styles unnafected by screen size */
 
 
-/* this last minute additions */
-.extra_buttons {
-  display: inline-block;
-  margin: 0 auto;
-  width: 66%;
-  text-align: center;
-}
-.extra_buttons img{display: inline-block;margin-right: 10px}
 
 /* ------------------------------ mobile first ------------------------------ */
 
@@ -120,7 +112,9 @@
 
 .topbar .button_text {
     display: inline-block;
-    font-size: 1.2vw
+    font-size: 1.2vw;
+    color: rgb(120,120,120);
+    vertical-align: -webkit-baseline-middle;
 }
 
 
@@ -226,6 +220,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1700px) {
+
+
+.topbar .button_text {
+    vertical-align: sub;
+}
 
   .topbar .button_container img {
       width : 50px;

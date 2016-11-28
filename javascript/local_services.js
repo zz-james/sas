@@ -22,6 +22,7 @@ function initSearchBar() {
 function handleInputText(dtext) {
   hideDetails();
   hideSearchResults();
+  dtext.trim();
   doJSONSearch(dtext);
 }
 
@@ -175,10 +176,17 @@ function displaySearchResults(results) {
   $('#js_search_results').html(searchResultHTML).show();
 }
 
+function displayNoResults() {
+  hideDetails();
+  var noResultHTML = 'Sorry no results found, please broaden the area for your search<br />';
+
+  $('#js_search_results').html(noResultHTML).show();
+}
+
 function showDetailsFromResults(index) {
 
   map.panTo(markers[index].position);
-  map.setZoom(11);
+  map.setZoom(12);
   new google.maps.event.trigger( markers[index], 'click' );
   showDetails(index);
 
@@ -186,10 +194,14 @@ function showDetailsFromResults(index) {
 
 function getGeoCode(term) {
   $.getJSON( "https://maps.googleapis.com/maps/api/geocode/json?address="+term+",UK"+"&key=AIzaSyAuQNImG39ziZAsfGRa8CBalU2ZbK5KN4A", function( data ) {
-    position = data.results[0].geometry.location;
-    console.log(position);
-    map.panTo(position);
-    map.setZoom(9);
+      if(data.results.length) {
+      position = data.results[0].geometry.location;
+      //console.log(position);
+      map.panTo(position);
+      map.setZoom(10);
+    } else {
+      displayNoResults();
+    }
   });
 }
 

@@ -23,8 +23,8 @@
 
     <input type=search name=s class="localservices-search" placeholder="Enter your postcode to find local support" id="js_searchbar">
     <div class="spacer"></div>
-    <div style="text-align: center;margin-bottom: 5px">
-    <p>Or <a target="pop" href="http://staging.supportaftersuicide.org.uk/wp-content/uploads/2016/10/regional-list-of-services1.pdf">view a list of local services by region (pdf)</a></p>
+    <div style="text-align: center;margin: 5px 9%">
+    <p>Or <a target="pop" href="http://supportaftersuicide.org.uk/wp-content/uploads/2016/10/regional-list-of-services1.pdf">click here to view a list of local services by region (pdf)</a></p>
     </div>
 
 

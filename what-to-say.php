@@ -1,9 +1,13 @@
-<?php /* The default template file */
+
+<?php /* Template Name: What to say */ 
+ /* The default_blue template file */
   get_header(); ?>
 
 <div class="topbar">  
 <?php get_template_part('partials/buttons'); ?>
 </div>
+
+<div class="what-to-say page-template-default">
 
 <div class="content">
 
@@ -20,8 +24,9 @@
       }
       ?>
     </div><!-- end content inner -->
-    <div class="spacer" style="height:50px"></div>
-     <div class="footer">&nbsp;</div>
+    <div class="spacer"></div>
   </div><!-- end content top -->
+
+</div>
 
 <?php get_footer(); ?>

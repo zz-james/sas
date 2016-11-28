@@ -1,9 +1,12 @@
-<?php /* The default template file */
+<?php /* Template Name: Witnesses */ 
+ /* The witness template file */
   get_header(); ?>
 
 <div class="topbar">  
 <?php get_template_part('partials/buttons'); ?>
 </div>
+
+<div class="i-didnt-even-know-the-person witnesses page-template-default">
 
 <div class="content">
 
@@ -20,8 +23,9 @@
       }
       ?>
     </div><!-- end content inner -->
-    <div class="spacer" style="height:50px"></div>
-     <div class="footer">&nbsp;</div>
+    <div class="spacer"></div>
   </div><!-- end content top -->
+
+</div>
 
 <?php get_footer(); ?>

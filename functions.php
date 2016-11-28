@@ -34,9 +34,6 @@ function enqueue_scripts() {
     wp_enqueue_script('google-maps');   
   }
 
-  if( is_page(22)  ) {  // this is the stories page
-
-  }
 
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
