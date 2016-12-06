@@ -22,7 +22,6 @@
 
 .home .content-bottom {
     background-color: #98D2D7;
-  background-image   : url("../img/content-top-bg.gif");
   background-repeat  : no-repeat;
   background-position: left top;  
 }
@@ -62,7 +61,7 @@
 /* below 380px wide styles */
 .home .content-inner-top {
   width         : 75%;
-  margin-top    : 60px;
+  margin-top    : 38px;
   padding-bottom: 82px;
 }
 
@@ -136,7 +135,6 @@
     background-color: #98D2D7;
   }
 
-
   .home .content-inner-top {
       width: 57%;
       padding-top: 100px;
@@ -173,7 +171,7 @@
 @media only screen and (min-width : 992px) {
   .home .content-inner-top {
       width: 65%;
-      padding-top: 25px;
+      padding-top: 80px;
   }
   .home .content-inner-top p {
     font-size: 2vw;

@@ -42,9 +42,15 @@
 }
 
 .menubar--mainnav {
-  margin    : 0;
+  margin    : 6px 0 0 0;
   padding   : 0;
 }
+
+.menubar--logo {
+  width      : 102px;
+  padding-top: 21px;
+}
+
 
 .menubar--mainnav li {
   width     : 23%;
@@ -82,10 +88,7 @@
   width     : 10%;
 }
 
-.menubar--logo {
-  width      : 35%;
-  padding-top: 8%;
-}
+
 
 /* ------------------------------------------- */
 
@@ -109,23 +112,64 @@
 
 }
 
+/* Loose the seperators at this point */ 
+@media only screen and (min-width : 512px) {
+
+  .menubar--mainnav li a {
+    border-left: 0;
+  }
+
+}
+
 /* ------------------------------------------- */
 
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
   
-  .menubar--mainnav {
-    padding-top: 15px;
+  .menubar--mainnav li a {
+    border-left: 0;
+  }
+
+  .menubar--mainnav li {
+    text-align: center;
   }
 
   .menubar--logo {
-    width      : 240px;
-    padding-top: 69px;
+    width      : 131px;
+    padding-top: 36px;
   }
+
+  .menubar--mainnav {
+      margin: 13px 0 0 0;
+  }
+
+  .menubar--mainnav li {
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .menubar--mainnav li a {
+    font-size : 14px;
+    font-weight: normal;
+    left: 0px;
+  }
+
+  .menubar--mainnav li:nth-child(2) {
+    text-align: left;
+  }
+
+  .menubar--mainnav li {
+    border-top: 3px solid #070;
+  }
+
+/*  .menubar--mainnav {
+    padding-top: 15px;
+  }
+
 
   .menubar--mainnav a {
     font-size : 23px;
-  }
+  }*/
 
 /*  .menubar--mainnav li {
     height     : 23px;
@@ -141,33 +185,36 @@
 @media only screen and (min-width : 992px) {
 
   .menubar-inner {
-    padding: 14px 49px 5px 39px;
+      padding: 15px 38px 2px 30px;
   }
 
   .menubar--mainnav {
-    display       : inline-block;
-    margin-left   : 5%;
-    border-top    : 0px;
+    display: inline-block;
     vertical-align: top;
-    padding-top   : 10px;
-  }
-
-  .menubar--mainnav a {
-    font-size : 19px;
+    margin: 5px 0 0 0;
   }
 
   .menubar--mainnav li {
-    width      : 25%;
-    text-align : center;
-    border-top : 0px;
-    height     : 23px;
+    border-top : 0;
+    padding-top: 0;
+    width      : 24%;
+  }
 
+  .menubar--mainnav li:first-child {
+    min-width: 14%; 
+  }
+
+  .menubar--mainnav li a {
+    font-size: 1.6vw;
+    vertical-align: middle;
   }
 
   .menubar--logo {
-    padding-top : 44px;
-    width       : 142px;
+    width      : 17%;
+    margin-right: 45px;
   }
+
+
 
 }
 
@@ -176,10 +223,9 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1700px) {
   .menubar-inner {
-      padding: 27px 49px 5px 39px;
+
   }
   .menubar--logo {
-    padding-top: 59px;
-    width: 215px;
+
   }
 }

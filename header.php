@@ -28,8 +28,9 @@
     <link rel="stylesheet" id="screen-style-css" href="wp-content/themes/sas/style.css" type="text/css" media="all">
   </head>
   <?php global $post; ?>
-  <body <?php //body_class($post->post_name); ?> class="home">
+  <body <?php body_class($post->post_name); ?> >
     <div class="fixed fullwidth">
+    
       <div id="menu" class="menubar">
         <div class="menubar-inner">
           <a href="/" class="menubar--logo"></a>

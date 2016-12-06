@@ -60,10 +60,7 @@ li {
   width: 20% !important;
 }
 
-.bio {
-  display: block;
-  margin-left: 300px;
-}
+
 
 .content {
   background-color: #fff;
@@ -97,7 +94,7 @@ li {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 274px;*/
-    width: 61%;
+    width: 80%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -126,8 +123,8 @@ li {
 .page-template-default .content-inner {
   width: 90%;
   margin: 0 auto;
-  margin-top: 10px;
-  padding: 10px 0;
+  margin-top: 0px;
+  padding: 1 0;
 }
 
 .content-top p {
@@ -156,9 +153,10 @@ li {
 }
 
 .your-stories .content-top, .page-template-default_blue .content-top {
+    overflow-x: hidden;
     background-color: rgba(255,255,255,0.85);
-    width: 61%;
-    height:100%;
+    width: 80%;
+    height:120%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -193,6 +191,16 @@ li {
   border-bottom: 2px solid black;
 }
 
+
+
+.localservices-search--container {
+  display: none;
+}
+
+.home .localservices-search--container {
+  display: block;
+}
+
 /* ------------------------------ mobile first ------------------------------ */
 
 /* below 380px wide styles */
@@ -214,7 +222,7 @@ li {
 .content-inner {
   width: 90%;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 0px;
   padding: 10px 0;
 }
 
@@ -231,17 +239,31 @@ li {
   display: inline-block;
 }
 
+.bio {
+  display: block;
+
+}
+
+.meet-the-team .alignleft {
+    float: none;
+    margin: 0.5em 1em 0.5em 0;
+    display: block;
+}
+
 /* ------------------------------------------- */
 
 
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
 
-  .no-mobile {
-    visibility: initial !important;
-    width: initial !important;
-    height: initial !important;
-  }
+.your-stories .content-top, .page-template-default_blue .content-top {
+overflow-x: auto;
+    width: 61%;
+height: 100%;
+}
+
+
+
 
   .content-inner-top {
     width: 64%;
@@ -284,6 +306,22 @@ li {
 @media only screen and (min-width : 992px) {
 
   /* - */
+
+.bio {
+  display: block;
+  margin-left: 300px;
+}
+
+.meet-the-team .alignleft {
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
+}
+
+  .no-mobile {
+    visibility: initial !important;
+    width     : inherit !important;
+    height    : initial !important;
+  }
 
   .content {
 

@@ -143,10 +143,61 @@
 }
 /* below 380px wide styles */
 
+.what-to-say .what-to-say-buttons img {
+  display: inline-block;
+  width: 100% !important; 
+  height: auto;
+  padding-top: 30%; 
+}
+
+.what-to-say .what-to-say-buttons .wp-caption {
+  text-align: center;
+  width: 17% !important;
+}
+
+/* ---- */
+
+.practical-support .extra-practical-support-buttons img {
+  display: inline-block;
+  width: 90% !important; 
+  height: auto;
+  padding-top: 30%; 
+}
+
+.practical-support .extra-practical-support-buttons .wp-caption {
+  text-align: center;
+  width: 27% !important;
+}
+
+/* ---- */
+
+.who-we-are .whowearebuttons img {
+  display: inline-block;
+  width: 90% !important; 
+  height: auto;
+  padding-top: 30%; 
+}
+
+.who-we-are .whowearebuttons .wp-caption {
+  text-align: center;
+  width: 27% !important;
+}
+
+/* ---- */
+
+.i-didnt-even-know-the-person .extra_buttons img {
+  display: inline-block;
+  width: 90% !important; 
+  height: auto;
+  padding-top: 30%;
+}
+
 .i-didnt-even-know-the-person .extra_buttons .wp-caption {
   text-align: center;
-  width: 30% !important;
+  width: 27% !important;
 }
+
+
 
 .i-didnt-even-know-the-person .extra_buttons p {
   text-align: center;

@@ -7,46 +7,45 @@
 
 #map {
   height: 86.8%;
-  margin-left: 38%;
+  display: none;
 }
+
 
 .map_leftCol {
-  position: absolute;
-  width: 38%;
-  height: 86.8%;
-  background-color: #96D2D7;
-  overflow-y: auto; 
+  width     : 100%;
+  height: initial;
 }
 
-
+.service_details {
+  display: none;
+}
 
 .map_instructions {
-  margin: 0 33px;
-  font-size: 18px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  display: none;
 }
 
+.map_leftCol > div:nth-child(5) > p::before {
+  content: "Please";
+}
 
 .map_leftCol .localservices-search {
-    background-color: #BCE1E1;
-    font-size: 2vw;
-    width: 90%;
+  display: none;
 }
 
-.map_leftCol blockquote {
-  width: 100%;
-  background-color: rgb(188,225,225);
-  margin: 0;
-    border-radius: 30px;
-    padding: 38px;
-    padding-bottom: 20px;
-}
+  .map_leftCol blockquote {
+    width: 100%;
+    background-color: rgb(188,225,225);
+    margin: 0;
+      border-radius: 30px;
+      padding: 38px;
+      padding-bottom: 20px;
+  }
 
-.map_leftCol blockquote p {
-    font-size: 1.5vw;
-    margin-bottom: 29px;
-}
+  .map_leftCol blockquote p {
+      font-size: 1.5vw;
+      margin-bottom: 29px;
+  }
+
 
 .map_leftCol input::-webkit-input-placeholder {
   font-size  : 20px;
@@ -97,11 +96,6 @@ input:focus::-moz-placeholder { color:transparent; }
 
 .search_results {
   display: none;
-  margin: 0 9%;
-  border-top: 1px solid #808080;
-  padding-top: 10px;
-    color: #505050;
-    font-size: 22px;
 }
 
 .search_results a {
@@ -129,6 +123,73 @@ input:focus::-moz-placeholder { color:transparent; }
 
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
+
+  .map_leftCol .no-mobile {
+    visibility: initial !important;
+    width     : inherit !important;
+    height    : initial !important;
+  }
+
+  #map {
+    height: 86.8%;
+    margin-left: 38%;
+    display: block;
+  }
+
+  .map_leftCol {
+    position  : absolute;
+    width     : 38%;
+    height    : 86.8%;
+    overflow-y: auto; 
+    background-color: #96D2D7;
+  }
+
+
+  .map_instructions {
+    font-size    : 18px;
+    margin       : 0 33px;
+    margin-bottom: 20px;
+    margin-top   : 20px;
+    display: block;
+  }
+
+  .map_leftCol > div:nth-child(5) > p::before {
+    content: "";
+  }
+
+  .map_leftCol .localservices-search {
+      background-color: #BCE1E1;
+      font-size: 2vw;
+      width: 90%;
+      display: inline;
+  }
+
+  .map_leftCol blockquote {
+    width: 100%;
+    background-color: rgb(188,225,225);
+    margin: 0;
+      border-radius: 30px;
+      padding: 38px;
+      padding-bottom: 20px;
+  }
+
+  .map_leftCol blockquote p {
+      font-size: 1.5vw;
+      margin-bottom: 29px;
+  }
+
+.search_results {
+  display: block;
+  margin: 0 9%;
+  border-top: 1px solid #808080;
+  padding-top: 10px;
+    color: #505050;
+    font-size: 22px;
+}
+
+.service_details {
+  display: block;
+}
 
 }
 
