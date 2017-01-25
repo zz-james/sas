@@ -21,7 +21,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
  */
 function enqueue_scripts() {
 
-  //wp_register_script('fonts', 'https://use.typekit.net/vgu8hwv.js');
+  wp_register_script('fonts', 'https://use.typekit.net/vgu8hwv.js');
   wp_enqueue_script('fonts');
 
   wp_register_script('utilities', THEME_DIR.'/javascript/utils.js', array( 'jquery' ), '1', true );

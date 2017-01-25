@@ -37,13 +37,6 @@ li {
   margin-bottom: 9px;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.fullwidth {
-  width: 100%;
-}
 
 .contact input {
   width: 100%;
@@ -56,11 +49,12 @@ li {
   font-size: 25px;
 }
 
-.what-to-say-buttons div {
-  width: 20% !important;
+
+
+.bio {
+  display: block;
+  margin-left: 300px;
 }
-
-
 
 .content {
   background-color: #fff;
@@ -94,7 +88,7 @@ li {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 274px;*/
-    width: 80%;
+    width: 93%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -123,8 +117,8 @@ li {
 .page-template-default .content-inner {
   width: 90%;
   margin: 0 auto;
-  margin-top: 0px;
-  padding: 1 0;
+  margin-top: 10px;
+  padding: 10px 0;
 }
 
 .content-top p {
@@ -153,10 +147,9 @@ li {
 }
 
 .your-stories .content-top, .page-template-default_blue .content-top {
-    overflow-x: hidden;
     background-color: rgba(255,255,255,0.85);
-    width: 80%;
-    height:120%;
+    width: 93%;
+    height:100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -191,26 +184,9 @@ li {
   border-bottom: 2px solid black;
 }
 
-
-
-.localservices-search--container {
-  display: none;
-}
-
-.home .localservices-search--container {
-  display: block;
-}
-
 /* ------------------------------ mobile first ------------------------------ */
 
 /* below 380px wide styles */
-
-.no-mobile {
-  position   : absolute;
-  visibility : hidden !important;
-  width      : 0 !important;
-  height     : 0 !important;
-}
 
 .content-top {
   padding-top: 0;
@@ -223,7 +199,7 @@ li {
 .content-inner {
   width: 90%;
   margin: 0 auto;
-  margin-top: 0px;
+  margin-top: 10px;
   padding: 10px 0;
 }
 
@@ -240,15 +216,27 @@ li {
   display: inline-block;
 }
 
-.bio {
-  display: block;
-
+.extra-practical-support-buttons div {
+  width: 27% !important; 
 }
 
-.meet-the-team .alignleft {
-    float: none;
-    margin: 0.5em 1em 0.5em 0;
-    display: block;
+.extra-practical-support-buttons img {
+  display: inline-block;
+  width: 90% !important; 
+  height: auto;
+  padding-top: 30%;
+}
+
+
+.what-to-say-buttons div {
+  width: 15% !important;
+}
+
+.what-to-say-buttons img {
+  display: inline-block;
+  width: 90% !important; 
+  height: auto;
+  padding-top: 30%;
 }
 
 /* ------------------------------------------- */
@@ -256,15 +244,6 @@ li {
 
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
-
-.your-stories .content-top, .page-template-default_blue .content-top {
-overflow-x: auto;
-    width: 61%;
-height: 100%;
-}
-
-
-
 
   .content-inner-top {
     width: 64%;
@@ -307,23 +286,6 @@ height: 100%;
 @media only screen and (min-width : 992px) {
 
   /* - */
-
-.bio {
-  display: block;
-  margin-left: 300px;
-}
-
-.meet-the-team .alignleft {
-    float: left;
-    margin: 0.5em 1em 0.5em 0;
-}
-
-  .no-mobile {
-    position: initial;
-    visibility: initial !important;
-    width     : inherit !important;
-    height    : initial !important;
-  }
 
   .content {
 

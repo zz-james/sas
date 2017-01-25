@@ -16,10 +16,6 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  -->
     <title><?php wp_title(); ?> - <?php bloginfo('name'); ?></title>
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
@@ -27,24 +23,33 @@
     <!-- temporary please remove -->
     <link rel="stylesheet" id="screen-style-css" href="wp-content/themes/sas/style.css" type="text/css" media="all">
   </head>
+
   <?php global $post; ?>
   <body <?php body_class($post->post_name); ?> >
     <div class="fixed fullwidth">
-    
+
       <div id="menu" class="menubar">
-        <div class="menubar-inner">
-          <a href="/" class="menubar--logo"></a>
-          <ul class="menubar--mainnav"><!-- whitespace between </li> and <li> is shown so leave this perculiar spacing in the source code -->
-            <li class="no-mobile"><a href="/#start">Home</a></li><li>
-            <a href="/local-services/">Local Support</a></li><li>
-            <a href="/support-guides/">Support Guides</a></li><li>
-            <a href="/who-we-are/">Who We Are</a></li><li>
-            <a href=" /press-and-media/ ">Press & Media</a></li><li>
-            <a href="/contact/">Contact</a></li>
-          </ul>
+        <div class="menubar--inner">
+
+          
+
+          <nav role='navigation' class="menubar--nav">
+            <a href="/" class="menubar--logo"></a>
+            <ul class="menubar--mainnav">
+              <li class="no-mobile"><a href="/#start">Home</a></li>
+              <li><a href="/local-services/">Local Support</a></li>
+              <li><a href="/support-guides/">Support Guides</a></li>
+              <li><a href="/who-we-are/">Who We Are</a></li>
+              <li><a href="/press-and-media/ ">Press & Media</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </nav>
+
         </div>
       </div>
-      <div class="localservices-search--container">
-        <input type=search name=s class="localservices-search" id="js_searchbar_home" placeholder="Enter your postcode to find local support">
+
+      <div class="topbar">  
+        <?php get_template_part('partials/buttons'); ?>
       </div>
+
     </div>

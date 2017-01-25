@@ -1,9 +1,8 @@
-<?php /* The default template file */
-  get_header(); ?>
+<?php /* The default template file */ ?>
 
-<div class="topbar">  
-<?php get_template_part('partials/buttons'); ?>
-</div>
+<?php    get_header(); ?>
+
+
 
 <div class="content">
 

@@ -5,7 +5,7 @@
   margin          : 0;
   width           : 100%;
   box-shadow      : 0px 1px 4px 2px rgba(128,128,128,0.5);
-/*  position        : fixed;*/
+  position        : fixed;
 }
 
 .localservices-search {
@@ -31,14 +31,15 @@ input::-moz-placeholder {
 
 /* below 380px wide styles */
 
-/*@-moz-document url-prefix() {
+@-moz-document url-prefix() {
   .home .localservices-search--container{
-
+    top             : 110px;
   }
-}*/
+}
 
 .home .localservices-search--container{
-  
+  top             : 106px;
+  top             : calc(66px + 11vw);
 }
 
 .home .localservices-search {
@@ -71,7 +72,7 @@ input::-moz-placeholder {
 /* Small Devices, latest Phones */ 
 @media only screen and (min-width : 380px) {
 
-/*  .home .localservices-search--container{
+  .home .localservices-search--container{
     top             : 106px;
     top             : calc(58px + 11vw);
   }
@@ -80,7 +81,7 @@ input::-moz-placeholder {
     .home .localservices-search--container{
       top             : 130px;
     }
-  }*/
+  }
 
   ::-webkit-input-placeholder {
     font-size  : 14px;
@@ -99,7 +100,7 @@ input::-moz-placeholder {
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
 
-/*  @-moz-document url-prefix() {
+  @-moz-document url-prefix() {
     .home .localservices-search--container{
       top             : 111px;
     }
@@ -107,7 +108,7 @@ input::-moz-placeholder {
 
   .home .localservices-search--container{
       top             : 168px;
-   }*/
+   }
 
   .localservices-search {
     font-size: 5vw;
@@ -131,10 +132,10 @@ input::-moz-placeholder {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-/*  .home .localservices-search--container{
+  .home .localservices-search--container{
       top             : 67px;
       height          : 84px;
-   }*/
+   }
 
   .home .localservices-search {
       width: 380px;
@@ -171,10 +172,10 @@ input::-moz-placeholder {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1700px) {
   
-/*  .home .localservices-search--container {
+  .home .localservices-search--container {
       top: 95px;
       height: 108px;
-  }*/
+  }
 
   .localservices-search {
       font-size: 3vw;

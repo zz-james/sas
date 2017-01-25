@@ -7,25 +7,22 @@
 
 /* below 380px wide styles */
 
-
 .topbar .homepage_buttons {
-  padding-top: 90px;
-/*  margin-bottom: 1vw;*/
-  text-align: center;
-  box-shadow      : 0px 1px 4px 2px rgba(128,128,128,0.5);
-  border-bottom : 1px solid rgba(128,128,128,0.5);
-  padding-bottom: 2vw;
+  text-align      : center;
+  box-shadow      : 0px 3px 5px 0px rgba(128,128,128,0.5);
+  background-color: #fff;
+  padding         : 5px;
+  display         : flex;
+  flex-wrap       : wrap;
+  justify-content : space-between;
 }
 
 .topbar .button_container {
-  display       : inline-block;
-  text-align    : center;
-  vertical-align: top; 
+  text-align     : center;
+  vertical-align : top; 
+  flex          : 0 1 auto; /* flex-grow flex-shrink flex-basis */
+  align-items: flex-start;
 }
-
-  .topbar .button_container {
-    padding-left: 3vw;
-  } 
 
 .topbar .button_container img {
   width : 7vw;
@@ -40,48 +37,20 @@
   display: none;
 }
 
-/* homepage buttons are different */
-.home .homepage_buttons {
-  padding-top : 68px;
-  margin-left : auto;
-  margin-right: auto;
-  width       : 60%;
-}
-
-.home .button_container {
-  display      : block;
-  text-align   : left;
-  margin-bottom: 17px;
-}
-
-.home .button_container img {
-  width : 18.5vw;
-  height: 18.5vw;
-  display: inline-block;
-}
-
-.home .button_text {
-  font-size      : 2.8vw;
-  display        : inline-block;
-  vertical-align : top;
-  margin-top     : 4px;
-  margin-left    : 12px;
-  width          : 50%;         
-}
-
-.home .button_text p {
-  display: block;
-  font-size      : 2.5vw;
-}
 
 /* ------------------------------------------- */
 
 /* Small Devices, latest Phones */ 
 @media only screen and (min-width : 380px) {
 
-.topbar .homepage_buttons {
-  padding-top: 100px;
-}
+  .topbar .homepage_buttons {
+    padding         : 5px 10px;
+  }
+
+  .topbar .button_container img {
+    width: 5vw;
+    height: 5vw;
+  }
 
 }
 /* ------------------------------------------- */
@@ -93,72 +62,28 @@
 
 
   .topbar .homepage_buttons {
-    padding-top: 146px;
-    padding-bottom: 5px;
-    white-space: nowrap;
+    padding-bottom : 5px;
+    white-space    : nowrap;
   }
-
 
 
   .topbar .button_container {
-    margin: 0 1vw;
-    padding-left: 0
+    margin       : 0 1vw;
+    padding-left : 0
   }
 
   .topbar .button_container img {
-      width : 30px;
-      height: 30px;
-      display: inline-block;
-      vertical-align: text-top;
+      width          : 30px;
+      height         : 30px;
+      display        : inline-block;
+      vertical-align : text-top;
   }
 
-.topbar .button_text {
-    display: inline-block;
-    font-size: 1.2vw;
-    color: rgb(120,120,120);
-    vertical-align: -webkit-baseline-middle;
-}
-
-
-  /* homepage buttons are different */
-
-  .home .homepage_buttons {
-      padding-top: 57px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 65%;
-  }
-
-  .home .button_container {
-    display: inline-block;
-    min-width: initial;
-    width: 26.4vw;
-    text-align: center;
-  }
-
-  .home .button_container img {
-    min-width: 10px;
-    display: block;
-  }
-
-  .home .button_container img {
-    width : 11.2vw;
-    height: 11.2vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .home .button_text {
-    display: inline-block;
-    width  : initial;
-    font-size: 1.7vw;
-
-  }
-
-  .home .button_text p{
-    display: inline-block;
-    width  : initial;
-    font-size: 1.5vw;
+  .topbar .button_text {
+      display        : inline-block;
+      font-size      : 1.2vw;
+      color          : rgb(120,120,120);
+      vertical-align : -webkit-baseline-middle;
   }
 
 
@@ -171,49 +96,12 @@
 
 
   .topbar .homepage_buttons {
-      padding-top: 75px;
-    padding-bottom: 10px;
+    padding: 10px;
   }
 
   .topbar .button_container img {
       width : 30px;
       height: 30px;
-  }
-
-
-  /* homepage buttons are different */
-  .home .homepage_buttons {
-    padding-top : 81px;
-    margin-left : auto;
-    margin-right: auto;
-    width       : 75%;
-  }
-
-  .home .button_container {
-    display      : inline-block;
-    text-align   : left;
-    margin-bottom: 17px;
-    width        : 19vw;
-  }
-
-  .home .button_container img {
-    width : 7vw;
-    height: 7vw;
-    display: inline-block;
-  }
-
-  .home .button_text {
-    font-size      : 1.5vw;
-    display        : inline-block;
-    vertical-align : top;
-    margin-top     : 4px;
-    margin-left    : 12px;
-    width          : 50%;         
-  }
-
-  .home .button_text p {
-    display: block;
-    font-size      : 1.1vw;
   }
 
 }
@@ -229,9 +117,9 @@
 @media only screen and (min-width : 1700px) {
 
 
-.topbar .button_text {
-    vertical-align: sub;
-}
+  .topbar .button_text {
+      vertical-align: sub;
+  }
 
   .topbar .button_container img {
       width : 50px;

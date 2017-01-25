@@ -1,11 +1,3 @@
-<?php
-
-load_template( "/Users/james/Projects/sas/wp-content/themes/sas/home.php" );
-
-
-exit();
-?>
-
 <?php /* Template Name: Home Page */ ?>
 <!-- The home-page template file -->
 <?php get_header(); ?>
@@ -27,7 +19,7 @@ exit();
           }
       }
       ?>
-      <p>This page does not exist, sorry!</p>
+      <p style="margin-top: 350px">This page does not exist, sorry!</p>
 
       <p>Please use the menu options above to navigate to another page.</p>
 
