@@ -1,12 +1,3 @@
-
-<?php /* Template Name: Default Blue */ 
- /* The default_blue template file */
-  get_header(); ?>
-
-<div class="topbar">  
-<?php get_template_part('partials/buttons'); ?>
-</div>
-
 <div class="content">
 
   <div class="content-top">
@@ -21,8 +12,9 @@
           }
       }
       ?>
+      
     </div><!-- end content inner -->
     <div class="spacer"></div>
   </div><!-- end content top -->
 
-<?php get_footer(); ?>
+</div>

@@ -1,24 +1,6 @@
+/* this file is a bit of a mess sorry */
+
 /* styles unnafected by screen size */
-
-/*.content {
-  color: rgb(88,88,90);  
-  text-align: center;
-}
-
-.content-top {
-  background-color: #98D2D7;
-}
-
-.img--divider {
-  width: 100%;
-  margin-bottom: -5px;
-  background-color: #9CD2D7;
-}
-
-
-.spacer {
-  height: 38px;
-}*/
 
 a {
   text-decoration: none;
@@ -27,8 +9,6 @@ a {
 
 td {
   font-size: 20px;
-
-
 }
 
 li {
@@ -39,6 +19,7 @@ li {
 
 .fixed {
   position: fixed;
+  z-index: 2;
 }
 
 .fullwidth {
@@ -60,8 +41,6 @@ li {
   width: 20% !important;
 }
 
-
-
 .content {
   background-color: #fff;
   color: rgb(50,50,50);  
@@ -72,34 +51,53 @@ li {
   background-color: #fff;
 }
 
+.your-stories .content-top {
+    padding-top: 22%;
+}
 
-.page-template-default h3 {
+h3 {
   font-size: 2em;
 }
-.page-template-default strong {
-  font-size: 1em;
-}
 
-.page-template-default h4 {
-  font-size: 1.5em;
-}
-.page-template-default .content {
-    color: rgb(50,50,50);
+table {
+    font-size: 20px;
     text-align: left;
+    margin: 0 20px;
 }
 
-.your-stories .content-top, .page-template-default .content-top {
+td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+.two_col {
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+}
+
+.content-inner .page_header{
+    border-bottom: 2px solid black;
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.content-top {
     background-color: rgba(255,255,255,0.75);
-/*    background-image: url(../img/stock-photo-people-drinking-coffee-in-cafe-closeup-of-couple-hands-with-cups-opaque.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 274px;*/
     width: 80%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
 
 }
+
+/* support guides are a little wider to get 2 on */
+.support-guides .content-top {
+  width: 75% !important;
+}
+
 
 .what-to-say-buttons {
   width: 100%;
@@ -111,19 +109,20 @@ li {
 }
 
 
-.page-template-default .content-top {
-
+.content-top {
+  overflow-x: hidden;
+  background-color: rgba(255,255,255,0.85);
+  width: 80%;
+  height:120%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.page-template-default .content-inner {
-  padding-bottom: 0px;
-  margin-top: 0px;
-}
 
-.page-template-default .content-inner {
+.content-inner {
   width: 90%;
   margin: 0 auto;
-  margin-top: 0px;
+  margin-top: 100px;
   padding: 1 0;
 }
 
@@ -131,74 +130,118 @@ li {
   font-size: 18px !important;
 }
 
-.page-template-default .spacer {
-    height: 0px;
+.spacer {
+  height: 0px;
 }
 
 /* --- whoops -- */
 
-.page-template-default_blue h3 {
+h3 {
   font-size: 2em;
 }
-.page-template-default_blue strong {
+strong {
   font-size: 1.5em;
 }
 
-.page-template-default_blue h4 {
+h4 {
   font-size: 1.5em;
 }
-.page-template-default_blue .content {
-    color: rgb(88,88,90);
-    text-align: left;
+.content {
+  color: rgb(88,88,90);
+  text-align: left;
 }
 
-.your-stories .content-top, .page-template-default_blue .content-top {
-    overflow-x: hidden;
-    background-color: rgba(255,255,255,0.85);
-    width: 80%;
-    height:120%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.page-template-default_blue .content-top {
-
-}
-
-.page-template-default_blue .content-inner {
-  padding-bottom: 0px;
-  margin-top: 0px;
-}
-
-.page-template-default_blue .content-inner {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 10px 0;
-}
-
-.page-template-default_blue .content-top p {
+.content-top p {
   font-size: initial;
 }
 
-.page-template-default_blue .spacer {
-    height: 0px;
+.spacer {
+  height: 0px;
 }
 
 /* -- un whoops --*/
 
-.content-inner .page_header{
-  border-bottom: 2px solid black;
+.local-services p {
+  color:rgb(120,120,120);
+  font-size: 22px;
 }
 
+
+.support-guides .content-inner-top {
+  max-width: initial !important;
+}
+
+
+/* below 380px wide styles */
+
+.what-to-say .what-to-say-buttons img {
+  display: inline-block;
+  width: 100% !important; 
+  height: auto;
+  padding-top: 30%; 
+}
+
+.what-to-say .what-to-say-buttons .wp-caption {
+  text-align: center;
+  width: 17% !important;
+}
+
+/* ---- */
+
+.practical-support .extra-practical-support-buttons img {
+  display: inline-block;
+  width: 90% !important; 
+  height: auto;
+  padding-top: 30%; 
+}
+
+.practical-support .extra-practical-support-buttons .wp-caption {
+  text-align: center;
+  width: 27% !important;
+}
+
+/* ---- */
+
+.who-we-are .whowearebuttons img {
+  display: inline-block;
+  width: 90% !important; 
+  height: auto;
+  padding-top: 30%; 
+}
+
+.who-we-are .whowearebuttons .wp-caption {
+  text-align: center;
+  width: 27% !important;
+}
+
+/* ---- */
+
+.i-didnt-even-know-the-person .extra_buttons img {
+  display: inline-block;
+  width: 90% !important; 
+  height: auto;
+  padding-top: 30%;
+}
+
+.i-didnt-even-know-the-person .extra_buttons .wp-caption {
+  text-align: center;
+  width: 27% !important;
+}
+
+
+
+.i-didnt-even-know-the-person .extra_buttons p {
+  text-align: center;
+}
+
+.whowearebuttons p {
+  text-align: center;
+}
 
 
 .localservices-search--container {
   display: none;
-}
-
-.home .localservices-search--container {
-  display: block;
 }
 
 /* ------------------------------ mobile first ------------------------------ */
@@ -232,7 +275,7 @@ li {
 }
 
 .spacer {
-    height: 0px;
+  height: 0px;
 }
 
 .whowearebuttons div {
@@ -240,15 +283,10 @@ li {
   display: inline-block;
 }
 
-.bio {
-  display: block;
-
-}
-
 .meet-the-team .alignleft {
-    float: none;
-    margin: 0.5em 1em 0.5em 0;
-    display: block;
+  float: none;
+  margin: 0.5em 1em 0.5em 0;
+  display: block;
 }
 
 /* ------------------------------------------- */
@@ -257,45 +295,19 @@ li {
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
 
-.your-stories .content-top, .page-template-default_blue .content-top {
-overflow-x: auto;
-    width: 61%;
-height: 100%;
-}
-
-
-
+  .content-top {
+    overflow-x : auto;
+    width      : 61%;
+    height     : 100%;
+  }
 
   .content-inner-top {
-    width: 64%;
     margin-top: 157px;
-/*    max-width : 1117PX;*/
   }
 
   .content-top p {
-      font-size: 3vw;
-      margin-bottom: 19px;
-  }
-
-  .content-xl {
-    font-size: 5.5vw;
-    line-height: initial;
-  }
-  
-  .content-unhelpful {
-    font-size: 4.9vw;
-  }
-  
-  .content-lg {
-    font-size: 3.5vw;
-  }
-
-  .content-lgp {
-    font-size: 4.5vw;
-  }
-
-  .content-inner-bottom {
-    padding-top: 180px;
+    font-size: 3vw;
+    margin-bottom: 19px;
   }
 
 }
@@ -308,15 +320,15 @@ height: 100%;
 
   /* - */
 
-.bio {
-  display: block;
-  margin-left: 300px;
-}
+  .bio {
+    display: block;
+    margin-left: 300px;
+  }
 
-.meet-the-team .alignleft {
+  .meet-the-team .alignleft {
     float: left;
     margin: 0.5em 1em 0.5em 0;
-}
+  }
 
   .no-mobile {
     position: initial;
@@ -325,21 +337,12 @@ height: 100%;
     height    : initial !important;
   }
 
-  .content {
-
-  }
-
   .content-top {
     padding-top: 1%;
   }
 
   .content-inner-top {
-    margin-top: 215px;
-    max-width : 735PX;
-  }
-
-  .content-inner {
-
+    margin-top: 130px;
   }
 
   .content-top p {
@@ -349,10 +352,6 @@ height: 100%;
 
   hr.content-divider-top {
     margin: 35px 0 39px 0;
-  }
-
-  .content-xl {
-    font-size: 2.5vw;
   }
 
 }

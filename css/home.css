@@ -1,58 +1,94 @@
 /* styles unnafected by screen size */
 
+.home .hero {
+
+
+  padding-top: 167px;
+}
+
+.home .localservices-search--container {
+  display: block;
+}
+
 .home .content {
   color      : rgb(88,88,90);  
+    background-color: #98D2D7;
   text-align : center;
-  padding-top: 22px;
 }
 
 .home .content-inner {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 10vw 0;
+  width  : 100%;
+  margin : 0 auto;
+  padding: 0 0;
 }
-
-.home .content-buttons-header {}
 
 .home .content-top {
   background-color: #98D2D7;
-  /*background-image   : url("img/content-top-bg.png");*/
-}
-
-.home .content-bottom {
-    background-color: #98D2D7;
-  background-repeat  : no-repeat;
-  background-position: left top;  
+  width: 100%;
+  padding-top: 0 !important; 
 }
 
 
-.home hr.content-divider {
-  height          : 2px;
-  border          : 0;
-  background-color: rgb(88,88,90); 
-  color           : rgb(88,88,90); 
+/* --------- preview block --------- */
+
+.home .preview-block-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align : left;
 }
 
-.home .img--divider {
-  width           : 100%;
-  margin-bottom   : -5px;
-  background-color: #9CD2D7;
+.home .preview-block {
+  flex       : 1 1 50%;
+  border     : 2px solid white;
+/*  padding    : 10px;*/
 }
 
-.home .content-inner-bottom {
-  background-color: rgba(255,255,255,0.7);
-  color           : rgb(53,67,77);
-  border-radius   : 10px;
-  padding         : 35px 0;
+.home .preview-block a{
+   color: #444; 
+   display: block;
+   text-align: right;
 }
+
+.home .preview-block h2 {
+  color: #fff;
+  display: inline-block;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  padding: 15px;
+  background:rgb(59,157,181);
+}
+
+
+.home .preview-block p {
+  padding: 5px 15px;
+}
+
+.home .preview-block:nth-child(1) {
+  /*background:rgb(59,157,181);*/
+}
+
+.home .preview-block:nth-child(2) {
+  background: rgb(233,90,79);
+}
+
+.home .preview-block:nth-child(3) {
+  background: rgb(233,147,105);
+}
+
+.home .preview-block:nth-child(4) {
+  background: rgb(18,176,186);
+}
+
+
+
 
 
 .home .footer {
   background-image: url("../img/sas_logos.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1000px;
 }
 
 
@@ -60,9 +96,7 @@
 
 /* below 380px wide styles */
 .home .content-inner-top {
-  width         : 75%;
-  margin-top    : 38px;
-  padding-bottom: 82px;
+  padding-bottom: 0;
 }
 
 .home .content-inner-top p {
@@ -71,45 +105,6 @@
   margin-bottom: 7px;
 }
 
-.home hr.content-divider-top {
-  margin: 35px 0;
-}
-
-.home .content-xl {
-  display      : block;
-  font-size    : 6.6vw;
-  line-height  : 11vw;
-}
-
-.home .content-ml {
-  font-size: 22.5px;
-  font-size: 4.7vw;
-}
-
-.home .down_arrow {
-  margin-top: 62px;
-}
-.home .content-bottom {
-    background-size: 100%;
-    padding-bottom: 50px;
-    padding-top: 25px;
-    margin-top: -146px;
-}
-
-.home .content-inner-bottom {
-  width        : 78%;
-  padding-left : 0;
-  padding-right: 0;
-  margin-top   : 222px;
-  margin-bottom: 199px;
-}
-
-.home .content-buttons-header {
-  display  : block;
-  font-size: 6.5vw;
-  margin   : auto; /* centre */
-  width    : 70%;
-}
 
 /* ------------------------------------------- */
 
@@ -123,21 +118,9 @@
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
 
-  .home .content-bottom {
-    background: 
-      url(../img/coffee_resized.png);
-    background-repeat: 
-      no-repeat;
-    background-size:
-      cover;
-    background-position: 
-      0px 0px;
-    background-color: #98D2D7;
-  }
 
   .home .content-inner-top {
-      width: 57%;
-      padding-top: 100px;
+
   }
 
 
@@ -146,55 +129,27 @@
     line-height: 3.1vw;
   }
 
-  .home .content-xl {
-    font-size    : 4.7vw;
-    line-height  : 11vw;
-  }
-
-  .home .content-ml {
-    font-size: 20px;
-    font-size: 2.7vw;
-  }
-
-  .home .content-inner-bottom {
-    padding: 38px 0 0 0;
-  }
-
-  .home .content-buttons-header {
-    font-size: 28px;
-  }
-
 }
 /* ------------------------------------------- */
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+  .home .hero {
+
+
+    padding-top: 188px;
+  }
+
+
   .home .content-inner-top {
-      width: 65%;
-      padding-top: 80px;
+
   }
   .home .content-inner-top p {
     font-size: 2vw;
     line-height: 1.9vw;
   }
-  .home hr.content-divider-top {
-    margin: 15px 0;
-  }
-  .home .content-xl {
-    font-size  : 2.5vw;
-    line-height: 3vw;
-  }
-  .home .content-ml {
-    font-size: 20px;
-    font-size: 1.85vw;
-  }
-  .home .down_arrow {
-    margin-top: 31px;
-  }
-  .down_arrow {
-    width : 55px;
-    height: 55px;
-  }
+
 }
 
 /* ------------------------------------------- */
@@ -203,9 +158,7 @@
 @media only screen and (min-width : 1700px) {
 
   .home .content-inner-top {
-      width: 69%;
       max-width: initial;
-      padding-top: 129px;
   }
 
   .home .content-inner-top p {

@@ -43,6 +43,11 @@
               <li><a href="/press-and-media/ ">Press & Media</a></li>
               <li><a href="/contact/">Contact</a></li>
             </ul>
+
+            <div class="menubar--social no-mobile">
+              <a href="https://www.facebook.com/supportaftersuicideuk/" target="_new" class="facebook"></a>
+              <a href="https://twitter.com/aftersuicideuk" target="_new" class="twitter"></a>
+            </div>
           </nav>
 
         </div>
@@ -52,4 +57,9 @@
         <?php get_template_part('partials/buttons'); ?>
       </div>
 
+      <div class="localservices-search--container">
+        <input type=search name=s class="localservices-search" id="js_searchbar_home" placeholder="Enter your postcode to find local support">
+      </div>
+
+    <?php //echo get_page_template_slug( $post->ID ); ?>
     </div>

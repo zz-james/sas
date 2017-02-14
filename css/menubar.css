@@ -13,7 +13,7 @@
 .menubar--logo {
   background-image    : url(../img/sas_logo.png);
   background-repeat   : no-repeat;
-  background-position : left top;
+  background-position : left center;
   background-size     : contain;
   display             : inline-block;
 }
@@ -39,6 +39,25 @@
   font-size       : 9px;
 }
 
+.facebook {
+  background-image    : url(../img/facebook.png);
+  background-repeat   : no-repeat;
+  background-position : left center;
+  background-size     : contain;
+  display             : inline-block;
+  width               : 41px;
+  height              : 41px;
+}
+
+.twitter {
+  background-image    : url(../img/twitter.png);
+  background-repeat   : no-repeat;
+  background-position : left center;
+  background-size     : contain;
+  display             : inline-block;
+  width               : 41px;
+  height              : 41px;
+}
 
 /* ------------------------------ mobile first ------------------------------ */
 
@@ -87,8 +106,9 @@
   }
 
   .menubar--logo {
-    width: 131px;
-    padding-top: 36px;
+    width       : 131px;
+    padding-top : 36px;
+    margin-right: 25px;
   }
 
   .menubar--mainnav li a {
@@ -122,11 +142,29 @@
   }
   
   .menubar--logo {
-    flex : 1 0 auto;
+    flex        : 0 1 auto;
+    margin-right: 40px;
+  }
+
+  .menubar--social {
+    flex        : 1 0 auto;
+    margin-left : 20px;
+    padding-top : 3px;
+    text-align: right;
+  }
+
+  .facebook {
+    width  : 41px;
+    height : 41px;
+  }
+
+  .twitter {
+    width  : 41px;
+    height : 41px;
   }
 
   .menubar--mainnav li a {
-    font-size   : 2vw;
+    font-size   : 1.5vw;
     font-weight : normal;
   }
 
@@ -145,5 +183,11 @@
 @media only screen and (min-width : 1700px) {
  .menubar {
       height: 100px;
+  }
+  .menubar--logo {
+    margin-right: 60px;
+  }
+  .menubar--social {
+    padding-top : 16px;
   }
 }

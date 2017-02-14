@@ -5,26 +5,29 @@
   margin          : 0;
   width           : 100%;
   box-shadow      : 0px 1px 4px 2px rgba(128,128,128,0.5);
+  padding         : 3px 0;
+  margin-top      : 1px;
 /*  position        : fixed;*/
 }
 
-.localservices-search {
+.home .localservices-search {
+
   box-sizing        : content-box;
   -webkit-appearance: textfield;
   display           : block;
   border            : none;
   border-radius     : 30px;
-  background-color  : rgb(224,224,224);
-  color             : rgb(140,140,140);
+  background-color  : rgb(194,194,194);
+  color             : rgb(100,100,100);
   text-align        : center;
 }
 
 ::-webkit-input-placeholder {
-  color : rgb(151,156,156);
+  color             : rgb(120,120,120);
 }
 
 input::-moz-placeholder {
-  color : rgb(151,156,156);
+  color             : rgb(120,120,120);
 }
 
 /* ------------------------------ mobile first ------------------------------ */
@@ -136,11 +139,16 @@ input::-moz-placeholder {
       height          : 84px;
    }*/
 
+  .home .localservices-search--container {
+      padding: 6px 0;
+      /* position: fixed; */
+  }
+
   .home .localservices-search {
       width: 380px;
       height: 50px;
       font-size: 2vw;
-      margin: 17px auto;
+      margin: 0px auto;
   }
 
   .localservices-search {
@@ -151,17 +159,7 @@ input::-moz-placeholder {
   }
 
 
-  ::-webkit-input-placeholder {
-    font-size: 1vw;
-    position: relative;
-    top: -4px;
-  }
 
-  input::-moz-placeholder {
-    font-size: 1vw;
-    position: relative;
-    top: -4px;
-  }
 
 
 }
