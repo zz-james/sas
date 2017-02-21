@@ -1,3 +1,4 @@
+  <div class="topbar"> 
     <div class="homepage_buttons">
 
       <div class="button_container">
@@ -51,3 +52,4 @@
       </div>
 
     </div>
+  </div>

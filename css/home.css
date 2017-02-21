@@ -28,7 +28,19 @@
   padding-top: 0 !important; 
 }
 
+.home .metaslider .caption-wrap {
+  position: absolute;
+  top: 32%;
+  left: 25%;
+  bottom: initial;
+  width: 50%;
+  line-height: 33px;
+  text-align: center;
+}
 
+.home .metaslider .caption {
+    font-size: 28px;
+}
 /* --------- preview block --------- */
 
 .home .preview-block-container {

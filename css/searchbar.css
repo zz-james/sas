@@ -1,6 +1,6 @@
 /*  search bar stuff */
 
-.home .localservices-search--container{
+.localservices-search--container{
   background-color: rgb(255,255,255);
   margin          : 0;
   width           : 100%;
@@ -10,8 +10,7 @@
 /*  position        : fixed;*/
 }
 
-.home .localservices-search {
-
+.localservices-search {
   box-sizing        : content-box;
   -webkit-appearance: textfield;
   display           : block;
@@ -34,17 +33,7 @@ input::-moz-placeholder {
 
 /* below 380px wide styles */
 
-/*@-moz-document url-prefix() {
-  .home .localservices-search--container{
-
-  }
-}*/
-
-.home .localservices-search--container{
-  
-}
-
-.home .localservices-search {
+.localservices-search {
   width    : 85%;
   height   : 36px;
   font-size: 16px;
@@ -55,10 +44,6 @@ input::-moz-placeholder {
   height   : 45px;
   font-size: 8vw;
 }
-
-/*.content-searchbar {
-  padding: 0 35px;
-}*/
 
 ::-webkit-input-placeholder {
   font-size  : 12px;
@@ -74,17 +59,6 @@ input::-moz-placeholder {
 /* Small Devices, latest Phones */ 
 @media only screen and (min-width : 380px) {
 
-/*  .home .localservices-search--container{
-    top             : 106px;
-    top             : calc(58px + 11vw);
-  }
-
-  @-moz-document url-prefix() {
-    .home .localservices-search--container{
-      top             : 130px;
-    }
-  }*/
-
   ::-webkit-input-placeholder {
     font-size  : 14px;
     line-height: 16px;
@@ -94,23 +68,12 @@ input::-moz-placeholder {
     font-size: 14px;
   }
 
-
 }
 
 /* ------------------------------------------- */
 
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
-
-/*  @-moz-document url-prefix() {
-    .home .localservices-search--container{
-      top             : 111px;
-    }
-  }
-
-  .home .localservices-search--container{
-      top             : 168px;
-   }*/
 
   .localservices-search {
     font-size: 5vw;
@@ -134,33 +97,17 @@ input::-moz-placeholder {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-/*  .home .localservices-search--container{
-      top             : 67px;
-      height          : 84px;
-   }*/
-
-  .home .localservices-search--container {
+  .localservices-search--container {
       padding: 6px 0;
       /* position: fixed; */
   }
 
-  .home .localservices-search {
+  .localservices-search {
       width: 380px;
       height: 50px;
       font-size: 2vw;
       margin: 0px auto;
   }
-
-  .localservices-search {
-      font-size: 3vw;
-      width    : 85%;
-      height   : 55px;
-      margin   : auto;
-  }
-
-
-
-
 
 }
 
@@ -169,21 +116,11 @@ input::-moz-placeholder {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1700px) {
   
-/*  .home .localservices-search--container {
-      top: 95px;
-      height: 108px;
-  }*/
-
-  .localservices-search {
-      font-size: 3vw;
-      height   : 75px;
-  }
-
   .menubar--mainnav a {
       font-size: 29px;
   }
 
-  .home .localservices-search {
+  .localservices-search {
       width: 650px;
       height: 46px;
       font-size: 16px;
