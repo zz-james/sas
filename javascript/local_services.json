@@ -281,7 +281,7 @@ var LOCAL_SERVICES = [
   {
     "Account ID": "001b000003P3TLC",
     "Account Name": "Cruse Bereavement Care",
-    "Website": "http://www.cruse.org.uk",
+    "Website": "https://www.cruse.org.uk/",
     "Phone": "02830252322",
     "Helpline": "02830252322",
     "Location": "National",
@@ -1025,7 +1025,7 @@ var LOCAL_SERVICES = [
   {
     "Account ID": "001b000003P3REy",
     "Account Name": "Cruse Bereavement Care - Leeds",
-    "Website": "http://www.crusebereavementcare.org.uk/",
+    "Website": "https://www.cruse.org.uk/leeds-area-map",
     "Phone": "0113 234 4150",
     "Helpline": "0844 477 9400",
     "Location": "Yorkshire and Humber",

@@ -1,0 +1,231 @@
+
+/* styles unnafected by screen size */
+
+.menubar {
+  z-index: 2;
+  width: 100%;
+  background-color: #FFF;
+  /*box-shadow:0 5px 10px 0 rgba(0,0,0,0.15),0 -5px 3px -10px #fff;*/
+  box-shadow      : 0px 0px 2px 2px rgba(128,128,128,0.5);
+}
+
+.menubar--logo {
+  background-image    : url(../img/sas_logo.png);
+  background-repeat   : no-repeat;
+  background-position : left top;
+  background-size     : contain;
+  display             : inline-block;
+}
+
+.menubar--mainnav {
+/*  border-top: 2px solid #070;*/
+  list-style : none;
+  text-align : left;
+  white-space: nowrap;
+}
+
+.menubar--mainnav li {
+  display:inline-block;
+}
+
+.menubar--mainnav a {
+  color: #787878;
+  text-decoration: none;
+}
+
+/* ------------------------------ mobile first ------------------------------ */
+
+/* below 380px wide styles */
+
+.menubar-inner {
+  padding: 20px 5% 0px 4%;
+}
+
+.menubar--mainnav {
+  margin    : 6px 0 0 0;
+  padding   : 0;
+}
+
+.menubar--logo {
+  width      : 102px;
+  padding-top: 21px;
+}
+
+
+.menubar--mainnav li {
+  width     : 23%;
+  text-align: center;
+  border-top: 1px solid #070;
+  margin-bottom: 3px; /* overrides li margin style in main content */
+}
+
+.menubar--mainnav li a:before {
+  content: "\00a0";
+}
+
+.menubar--mainnav li a {
+  font-size: 3vw;
+  border-left: 1px solid grey;
+  position: relative;
+  left:-5px;
+}
+
+.menubar--mainnav li:first-child {
+  text-align: left;
+  width     : 10%;
+}
+
+.menubar--mainnav li:nth-child(2) a{
+  border-left: 0 !important;
+}
+
+.menubar--mainnav li:nth-child(2) a:before {
+  content: "";
+}
+
+.menubar--mainnav li:last-child {
+  text-align: right;
+  width     : 10%;
+}
+
+
+
+/* ------------------------------------------- */
+
+/* Small Devices, latest Phones */ 
+@media only screen and (min-width : 380px) {
+
+  .menubar-inner {
+    padding: 28px 38px 2px 30px;
+  }
+
+  .menubar--mainnav li {
+    text-align: left;
+    padding-top: 2px;
+  }
+
+  .menubar--mainnav li a {
+    font-size: 2.5vw;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+
+}
+
+/* Loose the seperators at this point */ 
+@media only screen and (min-width : 512px) {
+
+  .menubar--mainnav li a {
+    border-left: 0;
+  }
+
+}
+
+/* ------------------------------------------- */
+
+/* Small Devices, Tablets Portrait */
+@media only screen and (min-width : 768px) {
+  
+  .menubar--mainnav li a {
+    border-left: 0;
+  }
+
+  .menubar--mainnav li {
+    text-align: center;
+  }
+
+  .menubar--logo {
+    width      : 131px;
+    padding-top: 36px;
+  }
+
+  .menubar--mainnav {
+      margin: 13px 0 0 0;
+  }
+
+  .menubar--mainnav li {
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .menubar--mainnav li a {
+    font-size : 14px;
+    font-weight: normal;
+    left: 0px;
+  }
+
+  .menubar--mainnav li:nth-child(2) {
+    text-align: left;
+  }
+
+  .menubar--mainnav li {
+    border-top: 3px solid #070;
+  }
+
+/*  .menubar--mainnav {
+    padding-top: 15px;
+  }
+
+
+  .menubar--mainnav a {
+    font-size : 23px;
+  }*/
+
+/*  .menubar--mainnav li {
+    height     : 23px;
+    max-height: 23px;
+    overflow: hidden;
+  }*/
+
+}
+
+/* ------------------------------------------- */
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  .menubar-inner {
+      padding: 15px 38px 2px 30px;
+  }
+
+  .menubar--mainnav {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0 0 0;
+  }
+
+  .menubar--mainnav li {
+    border-top : 0;
+    padding-top: 0;
+    width      : 24%;
+  }
+
+  .menubar--mainnav li:first-child {
+    min-width: 14%; 
+  }
+
+  .menubar--mainnav li a {
+    font-size: 1.6vw;
+    vertical-align: middle;
+  }
+
+  .menubar--logo {
+    width      : 17%;
+    margin-right: 45px;
+  }
+
+
+
+}
+
+/* ------------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px) {
+  .menubar-inner {
+
+  }
+  .menubar--logo {
+
+  }
+}
