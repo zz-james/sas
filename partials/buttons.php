@@ -1,7 +1,17 @@
   <div class="topbar"> 
-    <div class="homepage_buttons">
+   
 
-      <div class="button_container">
+
+
+<?php wp_nav_menu( array(
+                    'theme_location' => 'secondary_menu',
+                    'container' => false,
+                    'menu_class' =>'homepage_buttons',
+                
+         )); ?>
+
+
+  <!--     <div class="button_container">
         <a href="/emotional-support/" class="no_decoration">
           <img src="<?php echo THEME_DIR;?>/img/button_bereaved.png" />
           <div class="button_text">Emotional Support<p>Advice and support if you are bereaved</p>
@@ -49,7 +59,7 @@
           <div class="button_text">Your Stories
           </div>
         </a>
-      </div>
+      </div> -->
 
-    </div>
+
   </div>

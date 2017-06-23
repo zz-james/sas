@@ -11,11 +11,11 @@ td {
   font-size: 20px;
 }
 
-li {
-  font-size: 18px ;
-  line-height: 22px;
-  margin-bottom: 9px;
-}
+// li {
+//   font-size: 18px ;
+//   line-height: 22px;
+//   margin-bottom: 9px;
+// }
 
 .fixed {
   position: fixed;

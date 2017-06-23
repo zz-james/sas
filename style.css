@@ -15,6 +15,9 @@ Description: Theme file for Support After Suicide
  *  992px < width < 1700px : medium devices, desktops / media query
  * 1700px < width <    ∞px : large devices / media query
  */
+
+@import 'css/uikit-rtl.min.css';
+@import 'css/uikit.min.css';
 @import 'css/shame.css';
 @import 'css/menubar.css';
 @import 'css/searchbar.css';
@@ -25,6 +28,8 @@ Description: Theme file for Support After Suicide
 @import 'css/content.css';
 @import 'css/colours.css';
 @import 'css/home.css';
+
+
 
 
 

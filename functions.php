@@ -37,3 +37,11 @@ function enqueue_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+
+
+register_nav_menus( array(
+  'primary' => 'Primary Navigation Menu',
+    'secondary_menu' => 'Secondary Navigation Menu',
+  'social_menu' => 'Social Menu',
+
+) );
