@@ -42,12 +42,10 @@ td {
 }
 
 .content {
-  background-color: #fff;
-  color: rgb(50,50,50);  
   text-align: left;
 }
 
-.content-top {
+.uk-content {
   background-color: #fff;
 }
 
@@ -84,18 +82,18 @@ td {
     margin-bottom: 50px;
 }
 
-.content-top {
-    background-color: rgba(255,255,255,0.75);
-    width: 80%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.uk-content {
+    // background-color: rgba(255,255,255,0.75);
+    // width: 80%;
+    // height: 100%;
+    // margin-left: auto;
+    // margin-right: auto;
 
 }
 
 /* support guides are a little wider to get 2 on */
 .support-guides .content-top {
-  width: 75% !important;
+/*  width: 75% !important;*/
 }
 
 
@@ -110,24 +108,24 @@ td {
 
 
 .content-top {
-  overflow-x: hidden;
-  background-color: rgba(255,255,255,0.85);
-  width: 80%;
-  height:120%;
-  margin-left: auto;
-  margin-right: auto;
+/*  // overflow-x: hidden;
+  // background-color: rgba(255,255,255,0.85);
+  // width: 80%;
+  // height:120%;
+  // margin-left: auto;
+  // margin-right: auto;*/
 }
 
 
 .content-inner {
-  width: 90%;
+/*  width: 90%;
   margin: 0 auto;
   margin-top: 100px;
-  padding: 1 0;
+  padding: 1 0;*/
 }
 
 .content-top p {
-  font-size: 18px !important;
+/*  font-size: 18px !important;*/
 }
 
 .spacer {
@@ -140,7 +138,7 @@ h3 {
   font-size: 2em;
 }
 strong {
-  font-size: 1.5em;
+/*  font-size: 1.5em;*/
 }
 
 h4 {
@@ -148,12 +146,11 @@ h4 {
 }
 .content {
   color: rgb(128,128,128);
-  text-align: left;
 }
 
 
 .content-top p {
-  font-size: initial;
+
 }
 
 .spacer {
@@ -269,18 +266,17 @@ blockquote p {
 }
 
 .content-inner {
-  padding-bottom: 0px;
-  margin-top: 0px;
+/*  padding-bottom: 0px;
+  margin-top: 0px;*/
 }
 .content-inner {
-  width: 90%;
+/*  width: 90%;
   margin: 0 auto;
   margin-top: 0px;
-  padding: 10px 0;
+  padding: 10px 0;*/
 }
 
 .content-top p {
-  font-size: initial;
 }
 
 .spacer {
@@ -304,18 +300,17 @@ blockquote p {
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
 
-  .content-top {
+/*  .content-top {
     overflow-x : auto;
     width      : 61%;
     height     : 100%;
-  }
+  }*/
 
   .content-inner-top {
-    margin-top: 157px;
+/*    margin-top: 157px;*/
   }
 
   .content-top p {
-    font-size: 3vw;
     margin-bottom: 19px;
   }
 
@@ -346,9 +341,9 @@ blockquote p {
     height    : initial !important;
   }
 
-  .content-top {
+/*  .content-top {
     padding-top: 1%;
-  }
+  }*/
 
   .content-inner-top {
     margin-top: 130px;
@@ -356,7 +351,7 @@ blockquote p {
 
   .content-top p {
     margin-bottom: 22px;
-    font-size    : 26.5px;
+  
   }
 
   hr.content-divider-top {

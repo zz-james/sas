@@ -3,7 +3,7 @@
 .home .hero {
 
 
-  padding-top: 167px;
+  /*padding-top: 167px;*/
 }
 
 .home .localservices-search--container {
@@ -17,14 +17,15 @@
 }
 
 .home .content-inner {
-  width  : 100%;
+/*  width  : 100%;
   margin : 0 auto;
-  padding: 0 0;
+  padding: 0 0;*/
+    margin-top: 0 !important; 
 }
 
 .home .content-top {
   background-color: #98D2D7;
-  width: 100%;
+/*  width: 100%;*/
   padding-top: 0 !important; 
 }
 
@@ -46,7 +47,6 @@
 .home .preview-block-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   text-align : left;
 }
 
@@ -112,9 +112,9 @@
 }
 
 .home .content-inner-top p {
-  font-size    : 3.5vw;
+/*  font-size    : 3.5vw;
   line-height  : 4.1vw;
-  margin-bottom: 7px;
+  margin-bottom: 7px;*/
 }
 
 
@@ -137,8 +137,8 @@
 
 
   .home .content-inner-top p {
-    font-size: 2.5vw;
-    line-height: 3.1vw;
+/*    font-size: 2.5vw;
+    line-height: 3.1vw;*/
   }
 
 }
@@ -149,8 +149,8 @@
 
   .home .hero {
 
-
-    padding-top: 188px;
+/*
+    padding-top: 188px;*/
   }
 
 
@@ -158,11 +158,12 @@
 
   }
   .home .content-inner-top p {
-    font-size: 2vw;
-    line-height: 1.9vw;
+/*    font-size: 2vw;
+    line-height: 1.9vw;*/
   }
 
 }
+
 
 /* ------------------------------------------- */
 
@@ -174,8 +175,8 @@
   }
 
   .home .content-inner-top p {
-      font-size: 2.6vw;
-      line-height: 2.6vw;
+/*      font-size: 2.6vw;
+      line-height: 2.6vw;*/
   }
 
 }

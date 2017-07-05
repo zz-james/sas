@@ -1,6 +1,6 @@
-<div class="content">
+<div id="main" class="content">
 
-  <div class="content-top">
+  <div class="content-top uk-container uk-container-center">
     <div class="content-inner content-inner-top">
 
       <?php

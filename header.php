@@ -17,18 +17,24 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <title><?php wp_title(); ?> - <?php bloginfo('name'); ?></title>
-    <?php wp_enqueue_script("jquery"); ?>
+
+
     <?php wp_head(); ?>
+
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   </head>
 
+
   <body <?php body_class(); ?> >
 
-    <div class="fixed fullwidth">
+
+    <div class="fullwidth"  data-uk-sticky>
+
       <?php get_template_part('partials/menu'); ?>
-      <?php get_template_part('partials/buttons'); ?>
+      <?php // get_template_part('partials/buttons'); ?>
       <?php 
       if( is_page(49) || is_page(4) )  // is home page or local services?
         get_template_part('partials/search'); // show searchbar ?>
+
     </div>

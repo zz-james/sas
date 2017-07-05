@@ -3,12 +3,14 @@
 
 
 
-<?php wp_nav_menu( array(
-                    'theme_location' => 'secondary_menu',
-                    'container' => false,
-                    'menu_class' =>'homepage_buttons',
+<?php 
+        // wp_nav_menu( array(
+        //             'theme_location' => 'secondary_menu',
+        //             'container' => false,
+        //             'menu_class' =>'homepage_buttons',
                 
-         )); ?>
+        //  )); 
+         ?>
 
 
   <!--     <div class="button_container">

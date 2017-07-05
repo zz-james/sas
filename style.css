@@ -16,7 +16,7 @@ Description: Theme file for Support After Suicide
  * 1700px < width <    ∞px : large devices / media query
  */
 
-@import 'css/uikit-rtl.min.css';
+
 @import 'css/uikit.min.css';
 @import 'css/shame.css';
 @import 'css/menubar.css';
@@ -42,7 +42,7 @@ html, body {
   font-family: "Trebuchet MS";
   font-weight: lighter;
   box-sizing : border-box;
-  font-size  : 1em;
+
 }
 
 *, *:before, *:after {
