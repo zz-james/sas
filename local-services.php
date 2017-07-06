@@ -31,7 +31,7 @@
     <input type=search name=s class="localservices-search" placeholder="Enter your postcode to find local support" id="js_searchbar">
     <div class="spacer"></div>
     <div style="text-align: center;margin: 5px 9%;background-color: #BCE1E1;">
-    <p><span class="no-mobile">Or </span><a target="pop" href="http://supportaftersuicide.org.uk/wp-content/uploads/2016/10/regional-list-of-services1.pdf">click here to view a list of local services by region (pdf)</a></p>
+   <!--  <p><span class="no-mobile">Or </span><a target="pop" href="http://supportaftersuicide.org.uk/wp-content/uploads/2016/10/regional-list-of-services1.pdf">click here to view a list of local services by region (pdf)</a></p> -->
     </div>
 
 

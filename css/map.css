@@ -17,11 +17,11 @@
 }
 
 .service_details {
-  display: none;
+  /*display: none;*/
 }
 
 .map_instructions {
-  display: none;
+  /*display: none;*/
 }
 
 .map_leftCol > div:nth-child(5) > p::before {
