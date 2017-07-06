@@ -12,8 +12,8 @@
 
 
 .map_leftCol {
-  width     : 100%;
-  height: initial;
+/*  width     : 100%;
+  height: initial;*/
 }
 
 .service_details {
@@ -39,13 +39,14 @@
       border-radius: 30px;
       padding: 38px;
       padding-bottom: 20px;
+      background-image: none;
   }
 
   .map_leftCol blockquote p {
       font-size: 1.5vw;
       margin-bottom: 29px;
+      padding: 0;
   }
-
 
 .map_leftCol input::-webkit-input-placeholder {
   font-size  : 20px;
@@ -132,15 +133,15 @@ input:focus::-moz-placeholder { color:transparent; }
 
   #map {
     height: 86.8%;
-    margin-left: 38%;
+ /*   margin-left: 38%;*/
     display: block;
   }
 
   .map_leftCol {
-    position  : absolute;
+/*    position  : absolute;
     width     : 38%;
     height    : 86.8%;
-    overflow-y: auto; 
+    overflow-y: auto; */
     background-color: #96D2D7;
   }
 

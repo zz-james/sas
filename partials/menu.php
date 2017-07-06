@@ -75,7 +75,7 @@
                     'menu_class'     => 'menubar--mainnav uk-hidden@s',
                     'container' => false,
                     'items_wrap' => '%3$s', 
-                    'link_before' => '<img src="/wp-content/themes/sas v2/img/button_bereaved.png" />',
+                    'link_before' => '<img src="/wp-content/themes/sasv2/img/button_bereaved.png" />',
                 
          )); 
          ?>

@@ -6,7 +6,14 @@
 <?php get_template_part('partials/buttons'); ?>
 </div>
 
-  <div id="left_col" class="map_leftCol content-inner-top">
+<div class="uk-grid-collapse uk-grid uk-height-1-1" uk-grid>
+
+
+
+    <div id="map" class="content-inner-top uk-width-2-3@m uk-flex-last@s"><span class="loading">loading tiles...</span></div>
+    
+
+  <div id="left_col" class="map_leftCol content-inner-top uk-width-1-3@m">
 
     <div class="spacer"></div>
 
@@ -36,7 +43,7 @@
     <!-- card for service detail -->
     <div class="service_details" id="js_services" style="opacity: 0;">
       <a href='#' id="js_service_back_link" onclick="hideDetails();showSearchResults();"><< Back to search results..</a>
-      <h3 class="service_details__name" id="js_service_name"><h3>
+      <h3 class="service_details__name" id="js_service_name"></h3>
       <div>
         <span id="js_service_address"   class="service_details__address"></span><br/>
         <span id="js_service_website"   class="service_details__website"></span><br />
@@ -44,14 +51,18 @@
        <!--  <span id="js_service_email"     class="service_details__email">E-Mail: hq@petesdragons.org.uk</span> -->
       </div>
       
-      <h3 class="service_details__header">Overview.<h3>
+      <h3 class="service_details__header">Overview.</h3>
       <span id="js_service_overview"     class="service_details__overview"></span> <br />
-      <h3 id="js_service_details__header" class="service_details__header">Services available.<h3>
+      <h3 id="js_service_details__header" class="service_details__header">Services available.</h3>
       <div id="js_service_services" class="service_details__overview"></div>
 
     </div>
     <!-- end card for service detail  -->
 
-  </div><div id="map" class="content-inner-top"><span class="loading">loading tiles...</span></div>
+  </div>
+
+
+
+</div> <!-- End of uk-grid -->
 
 <?php get_footer(); ?>
