@@ -1,19 +1,3 @@
-<!-- offcanvas menu  -->
-<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true; flip: true" class="uk-offcanvas uk-open">
-  <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
-    <?php 
-    wp_nav_menu( array(
-                'theme_location' => 'primary',
-                'menu_class'     => 'uk-nav uk-nav-primary',
-                'container' => div,
-                'container_class' => 'uk-panel'
-   )); 
-   ?>
-   </div>
-</div>
-<!-- offcanvas menu END  -->
-
-
 
 <div id="mobile-menu" uk-sticky class="uk-navbar-container uk-sticky uk-sticky-fixed uk-hidden@m" >
   <div class="uk-container uk-container-expand">
@@ -25,30 +9,14 @@
 
 
       <div class="uk-navbar-right"  uk-icon="ratio:2">
-          <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href=""></a>
+
+          <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #dropmenu" ></a>
 
       </div>
 
     </nav>
   </div>
 </div>
-
-<!--     <div id="offcanvas-slide" uk-offcanvas="" class="uk-offcanvas uk-open" >
-        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
-
-            <ul class="uk-nav uk-nav-default">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-header">Header</li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#">Item</a></li>
-            </ul>
-
-        </div>
-    </div> -->
-
 
 
 
@@ -59,37 +27,59 @@
 
 <!-- -->
 <div id="menu" class="menubar uk-visible@m"> 
-  <div class="menubar--inner"> 
+  <div class="menubar--inner  uk-container uk-container-center"> 
 
-      <nav role='navigation' id="nav" class="menubar--nav uk-child-width-auto@s uk-text-center uk-grid-small uk-flex-nowrap" uk-grid>
+
+      <nav role='navigation' id="mainnav" class="menubar--nav uk-child-width-auto@s uk-text-center uk-flex-nowrap uk-flex-around" uk-grid>
           
 
-          <div class="">
+          <div class="uk-width-auto@s logo--container">
               <a href="/" class="menubar--logo"></a>
           </div>
 
-
+          <ul uk-grid id="main-nav" class="uk-width-expand@m uk-child-width-expand@s uk-text-center uk-flex-around uk-grid-collapse">
         <?php 
         wp_nav_menu( array(
                     'theme_location' => 'primary',
                     'menu_class'     => 'menubar--mainnav uk-hidden@s',
                     'container' => false,
                     'items_wrap' => '%3$s', 
-                    'link_before' => '<img src="/wp-content/themes/sasv2/img/button_bereaved.png" />',
+                    // 'link_before' => '<img src="/wp-content/themes/sasv2/img/button_bereaved.png" />',
+
                 
          )); 
          ?>
+         </ul>
 
-         <div class="menubar--social no-mobile">
+       <!--   <div class="menubar--social no-mobile">
         
 
           <a href="https://www.facebook.com/supportaftersuicideuk/" target="_new" class="facebook"></a>
           <a href="https://twitter.com/aftersuicideuk" target="_new" class="twitter"></a>
 
         </div>
-
+ -->
       </nav>
 
 
   </div>
 </div> 
+
+<!-- offcanvas menu  -->
+<div id="dropmenu" class="dropdownmenu uk-hidden@m"  hidden>
+
+   <div id="offcanvas-nav-primary"  class="">
+      <div class="uk-container uk-container-center">
+        <?php 
+        wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'menu_class'     => 'uk-nav uk-text-right',
+                    'container' => 'div',
+                    'container_class' => 'uk-panel'
+       )); 
+       ?>
+       </div>
+  </div> 
+
+</div>
+<!-- offcanvas menu END  -->

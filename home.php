@@ -6,6 +6,7 @@
 <?php //get_template_part('partials/buttons'); ?>
 </div> -->
 
+<div class="content uk-container uk-container-center">
 
 <div class="hero">
 <?php 
@@ -13,9 +14,9 @@
 ?>
 </div>
 
-<div class="content">
 
-  <div class="content-top uk-container uk-container-center">
+
+  <div class="content-top">
     <div class="content-inner content-inner-top">
 
 
@@ -35,7 +36,7 @@
 </div> -->
 
 
-      <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-stack" uk-grid data-uk-grid-margin><!-- start grid -->
+      <div id="homecards" class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-stack" uk-grid data-uk-grid-margin><!-- start grid -->
     <?php query_posts('cat=3'); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  
@@ -54,11 +55,7 @@
 
 
 
-  <div style="padding: 100px 0;background: #98D2D7;">
-    <div style="width:75%;margin-left: auto;margin-right: auto">
-      <div class="footer">&nbsp;</div>
-    </div>
-  </div>
+
 
 <?php get_footer(); ?>
 

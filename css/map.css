@@ -1,12 +1,14 @@
 /* styles unnafected by screen size */
 
 
+
+
 /* ------------------------------ mobile first ------------------------------ */
 
 /* below 380px wide styles */
 
 #map {
-  height: 86.8%;
+  height: 65%;
 /*  display: none;*/
 }
 
@@ -14,7 +16,23 @@
 .map_leftCol {
 /*  width     : 100%;
   height: initial;*/
+
+      background-color: #01b1bb;
 }
+.page-id-4 .uk-card{
+  margin: 1em;
+}
+.page-id-4 .uk-card-body {
+    padding: 15px;
+}
+
+
+
+.localservices-search{
+  width: 100%;
+
+}
+
 
 .service_details {
   /*display: none;*/
@@ -29,23 +47,17 @@
 }
 
 .map_leftCol .localservices-search {
-  display: none;
 }
 
   .map_leftCol blockquote {
     width: 100%;
-    background-color: rgb(188,225,225);
-    margin: 0;
-      border-radius: 30px;
-      padding: 38px;
-      padding-bottom: 20px;
-      background-image: none;
+    background-color: rgb(255,255,255);
+
+
   }
 
   .map_leftCol blockquote p {
-      font-size: 1.5vw;
-      margin-bottom: 29px;
-      padding: 0;
+    color: #808080;
   }
 
 .map_leftCol input::-webkit-input-placeholder {
@@ -67,13 +79,14 @@
 }
 
 .service_details .service_details__name {
-  font-size: 2vw;
-  text-decoration: underline;
+/*  font-size: 2vw;*/
+ /* text-decoration: underline;*/
+ margin-top: 0;
 }
 
 .service_details .service_details__header {
-  font-size: 1.4vw;
-  text-decoration: underline; 
+/*  font-size: 1.4vw;*/
+/*  text-decoration: underline; */
 }
 
 #js_service_details__header {
@@ -101,7 +114,7 @@ input:focus::-moz-placeholder { color:transparent; }
 
 .search_results a {
   color: #808080;
-  font-size: 1.5vw;
+/*  font-size: 1.5vw;*/
   text-decoration: none;
 }
 
@@ -125,6 +138,11 @@ input:focus::-moz-placeholder { color:transparent; }
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
 
+.page-id-4 .localservices-search--container{
+  display: none;
+}
+
+
   .map_leftCol .no-mobile {
     visibility: initial !important;
     width     : inherit !important;
@@ -132,19 +150,23 @@ input:focus::-moz-placeholder { color:transparent; }
   }
 
   #map {
-    height: 86.8%;
- /*   margin-left: 38%;*/
+
     display: block;
   }
 
   .map_leftCol {
 /*    position  : absolute;
-    width     : 38%;
+    width     : 38%; */
     height    : 86.8%;
-    overflow-y: auto; */
-    background-color: #96D2D7;
-  }
+    overflow-y: auto;
 
+  }
+.page-id-4 .uk-card{
+  margin: 0 2em;
+}
+.page-id-4 .uk-card-body {
+    padding: 30px;
+}
 
   .map_instructions {
     font-size    : 18px;
@@ -160,29 +182,21 @@ input:focus::-moz-placeholder { color:transparent; }
 
   .map_leftCol .localservices-search {
       background-color: #BCE1E1;
-      font-size: 2vw;
-      width: 90%;
+    /*  font-size: 2vw;*/
+      width: 100%;
       display: inline;
   }
 
   .map_leftCol blockquote {
-    width: 100%;
-    background-color: rgb(188,225,225);
-    margin: 0;
-      border-radius: 30px;
-      padding: 38px;
-      padding-bottom: 20px;
+    
   }
 
   .map_leftCol blockquote p {
-      font-size: 1.5vw;
-      margin-bottom: 29px;
+
   }
 
 .search_results {
   display: block;
-  margin: 0 9%;
-  border-top: 1px solid #808080;
   padding-top: 10px;
     color: #505050;
     font-size: 22px;
@@ -198,19 +212,16 @@ input:focus::-moz-placeholder { color:transparent; }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+    #map, #left_col {
+      height: 80%;
+}
 }
 
 /* ------------------------------------------- */
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1700px) {
-  #map {
-    height: 81.8%;
-
-  }
-
-  .map_leftCol {
+  #map, #leftCol {
 
     height: 81.8%;
 

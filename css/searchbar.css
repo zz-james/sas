@@ -1,7 +1,7 @@
 /*  search bar stuff */
 
 .localservices-search--container{
-  background-color: rgb(255,255,255);
+  background-color: #E9E8E4;
   margin          : 0;
   width           : 100%;
   box-shadow      : 0px 1px 4px 2px rgba(128,128,128,0.5);
@@ -34,24 +34,24 @@ input::-moz-placeholder {
 /* below 380px wide styles */
 
 .localservices-search {
-  width    : 85%;
-  height   : 36px;
-  font-size: 16px;
-  margin   : 10px auto;
+  width    : 35%;
+  height   : 1.4em;
+  font-size: 1.2em;
+  margin   : 0.5em auto;
 }
 
 .localservices-search {
-  height   : 45px;
-  font-size: 8vw;
+/*  height   : 45px;
+  font-size: 8vw;*/
 }
 
 ::-webkit-input-placeholder {
-  font-size  : 12px;
-  line-height: 14px;
+/*  font-size  : 12px;
+  line-height: 14px;*/
 }
 
 input::-moz-placeholder {
-  font-size: 12px;
+/*  font-size: 12px;*/
 }
 
 /* ------------------------------------------- */
@@ -60,12 +60,12 @@ input::-moz-placeholder {
 @media only screen and (min-width : 380px) {
 
   ::-webkit-input-placeholder {
-    font-size  : 14px;
-    line-height: 16px;
+/*    font-size  : 14px;
+    line-height: 16px;*/
   }
 
   input::-moz-placeholder {
-    font-size: 14px;
+  /*  font-size: 14px;*/
   }
 
 }
@@ -76,18 +76,18 @@ input::-moz-placeholder {
 @media only screen and (min-width : 768px) {
 
   .localservices-search {
-    font-size: 5vw;
+/*    font-size: 5vw;
     width    : 85%;
-    margin   : auto;
+    margin   : auto;*/
   }
 
   ::-webkit-input-placeholder {
-    font-size  : 16px;
-    line-height: 18px;
+/*    font-size  : 16px;
+    line-height: 18px;*/
   }
 
   input::-moz-placeholder {
-    font-size: 16px;
+/*    font-size: 16px;*/
   }
 
 }
@@ -98,15 +98,15 @@ input::-moz-placeholder {
 @media only screen and (min-width : 992px) {
 
   .localservices-search--container {
-      padding: 6px 0;
+   /*   padding: 6px 0;*/
       /* position: fixed; */
   }
 
   .localservices-search {
-      width: 380px;
+ /*     width: 380px;
       height: 50px;
       font-size: 2vw;
-      margin: 0px auto;
+      margin: 0px auto;*/
   }
 
 }
@@ -117,26 +117,26 @@ input::-moz-placeholder {
 @media only screen and (min-width : 1700px) {
   
   .menubar--mainnav a {
-      font-size: 29px;
+  /*    font-size: 29px;*/
   }
 
   .localservices-search {
-      width: 650px;
+ /*     width: 650px;
       height: 46px;
       font-size: 16px;
-      margin: 30px auto;
+      margin: 30px auto;*/
   }
   
   ::-webkit-input-placeholder {
-    font-size: 1vw;
+/*    font-size: 1vw;
     position: relative;
-    top: 3px;
+    top: 3px;*/
   }
 
   input::-moz-placeholder {
-    font-size: 1vw;
+/*    font-size: 1vw;
     position: relative;
-    top: 3px;
+    top: 3px;*/
   }
 
 }

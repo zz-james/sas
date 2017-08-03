@@ -39,9 +39,16 @@ html, body {
   height     : 100%;
   margin     : 0;
   padding    : 0;
-  font-family: "Trebuchet MS";
+    font-family: serenity, sans-serif;
   font-weight: lighter;
   box-sizing : border-box;
+  font-size: 18px;
+
+}
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6{
+  font-family: serenity, sans-serif;
+font-weight: 300;
 
 }
 
@@ -64,3 +71,11 @@ a.no_decoration {
     margin: 0.5em 1em 0.5em 0;
 }
 
+.bordered{
+  -webkit-box-shadow: 0px 3px 2px -1px rgba(50, 50, 50, 0.75), 0px -3px 2px -3px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 3px 2px -1px rgba(50, 50, 50, 0.75), 0px -3px 2px -3px rgba(50, 50, 50, 0.75);
+box-shadow: 0px 3px 2px -3px rgba(50, 50, 50, 0.75), 0px -3px 2px -3px rgba(50, 50, 50, 0.75);
+
+}
+
+.text-white{color: #fff}

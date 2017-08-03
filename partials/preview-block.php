@@ -8,11 +8,17 @@
 
 <div>
 
-  <div class="uk-card uk-card-default uk-card-body">
+  <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
 
-    <h2><?php echo $cat; ?></h2>
-   <?php the_content(); ?>
+    <div class="uk-card-header">
+        <h3  class="uk-card-title"><?php echo $cat; ?></h3>
+    </div>
+
+    <div class="uk-card-body uk-position-small uk-position-bottom-center uk-overlay uk-overlay-default uk-width-4-5">
+       <?php the_content(); ?>
+    </div>
+    <div class=""></div>
 
   </div>
 
-  </div>
+</div>

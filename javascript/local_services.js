@@ -24,6 +24,7 @@ function handleInputText(dtext) {
   hideSearchResults();
   dtext.trim();
   doJSONSearch(dtext);
+ $('.results-hide').hide();
 }
 
 function initMap() {
@@ -51,7 +52,7 @@ function addMarker(service) {
   });
 
 
-  var contentString = service["Account Name"] + '<br/>';
+  var contentString = '<div class=service>' + service["Account Name"] + '</div>';
 
   var infowindow = new google.maps.InfoWindow({
     content: contentString
@@ -88,8 +89,8 @@ function showDetails(index) {
   + record['Primary Postal Code'];
 
   $('#js_service_address').html(address);
-  $('#js_service_website').html('Website: <a href="'+record['Website']+'">'+record['Website']+'</a>');
-  $('#js_service_telephone').html('Telephone: '+record['Phone']);
+  $('#js_service_website').html('<a href="'+record['Website']+'">'+record['Website']+'</a>');
+  $('#js_service_telephone').html(''+record['Phone']);
   $('#js_service_overview').html(record['Description']);
 
 
@@ -117,6 +118,7 @@ function showDetails(index) {
   }
 
   $('#js_services').css('opacity','1');
+     
 }
 
 
@@ -128,10 +130,12 @@ function hideDetails() {
 
 function hideSearchResults() {
   $('#js_search_results').hide();
+
 }
 
 function showSearchResults() {
   $('#js_search_results').show();
+  $('.results-hide').hide();
 }
 
 function hideBackLink() {
@@ -171,7 +175,7 @@ function displaySearchResults(results) {
   var searchResultHTML = ''
   for(var i=0; i<results.length;i++){
     var index = results[i];
-    searchResultHTML += '<a href="#" onclick="showDetailsFromResults('+index+')">'+LOCAL_SERVICES[index]['Account Name'] + '</a> <br />';
+    searchResultHTML += '<div class="servicedetail"><a href="#" onclick="showDetailsFromResults('+index+')">'+LOCAL_SERVICES[index]['Account Name'] + '</a> </div>';
   }
   $('#js_search_results').html(searchResultHTML).show();
 }

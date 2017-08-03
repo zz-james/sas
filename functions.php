@@ -21,19 +21,21 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
  */
 function enqueue_scripts() {
 
-  wp_register_script('fonts', 'https://use.typekit.net/vgu8hwv.js');
-  wp_enqueue_script('fonts');
+// typekit must go first
+  wp_enqueue_script('typekit', 'https://use.typekit.net/vgu8hwv.js', array(), '1.0');
+  wp_add_inline_script('typekit', 'try{Typekit.load({ async: true });}catch(e){}' );
 
-   wp_enqueue_script("jquery"); 
+  wp_enqueue_script("jquery"); 
 
+  wp_enqueue_script('utilities', THEME_DIR.'/javascript/utils.js', array( 'jquery' ), '1', true );
 
-  wp_register_script('utilities', THEME_DIR.'/javascript/utils.js', array( 'jquery' ), '1', true );
-  wp_enqueue_script('utilities');
-    wp_enqueue_script('uikitjs',THEME_DIR.'/javascript/uikit.js', array( 'jquery' ), null, false );  
+  wp_enqueue_script('uikitjs',THEME_DIR.'/javascript/uikit.js', array( 'jquery' ), null, false );  
+
 
   if( is_page(4)  ) {  // this is the map page
     wp_register_script('map-data', THEME_DIR.'/javascript/local_services.json', [], null, true );
     wp_register_script('map-stuff',THEME_DIR.'/javascript/local_services.js', array( 'map-data' ), null, true );
+
     wp_register_script('google-maps', 'http://maps.googleapis.com/maps/api/js?key=AIzaSyAuQNImG39ziZAsfGRa8CBalU2ZbK5KN4A&callback=initMap', array( 'map-stuff' ), null, true );
     wp_enqueue_script('google-maps');   
 
@@ -42,6 +44,9 @@ function enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
+
+
+add_theme_support( 'post-thumbnails' ); 
 
 /**
  * register WP menuss

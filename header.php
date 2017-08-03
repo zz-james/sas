@@ -9,7 +9,9 @@
   <head>
     <!-- meta shizzle -->
     <meta charset="utf-8">
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <meta name="description" content="Supporting those affected by suicide">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="jamessmith@thecalmzone.net">
@@ -21,7 +23,7 @@
 
     <?php wp_head(); ?>
 
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+ <!--    <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
 
   </head>
 
@@ -29,12 +31,16 @@
   <body <?php body_class(); ?> >
 
 
-    <div class="fullwidth"  data-uk-sticky>
+
+    <div class="header"  data-uk-sticky>
+  <?php 
+      // if( is_page(49) || is_page(4) )  // is home page or local services?
+        get_template_part('partials/search'); // show searchbar ?>
+
 
       <?php get_template_part('partials/menu'); ?>
       <?php // get_template_part('partials/buttons'); ?>
-      <?php 
-      if( is_page(49) || is_page(4) )  // is home page or local services?
-        get_template_part('partials/search'); // show searchbar ?>
+
+    
 
     </div>

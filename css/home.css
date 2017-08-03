@@ -1,9 +1,8 @@
 /* styles unnafected by screen size */
 
-.home .hero {
-
-
-  /*padding-top: 167px;*/
+ .home .hero,
+  .home .content-top  {
+  padding-top: 1em;
 }
 
 .home .localservices-search--container {
@@ -12,21 +11,21 @@
 
 .home .content {
   color      : rgb(88,88,90);  
-    background-color: #98D2D7;
+/*    background-color: #98D2D7;*/
   text-align : center;
 }
 
 .home .content-inner {
-/*  width  : 100%;
-  margin : 0 auto;
-  padding: 0 0;*/
+
     margin-top: 0 !important; 
 }
 
 .home .content-top {
-  background-color: #98D2D7;
-/*  width: 100%;*/
-  padding-top: 0 !important; 
+/*  background-color: #98D2D7;*/
+
+}
+.home .metaslider img{
+  border-radius: 5px;
 }
 
 .home .metaslider .caption-wrap {
@@ -37,6 +36,7 @@
   width: 50%;
   line-height: 33px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .home .metaslider .caption {
@@ -76,31 +76,67 @@
   padding: 5px 15px;
 }
 
-.home .preview-block:nth-child(1) {
-  /*background:rgb(59,157,181);*/
+
+
+#homecards .uk-card{
+    padding: 2em 1em;
+    height: 350px;
+
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2966d+0,f4b192+100 */
+  background: #f2966d; /* Old browsers */
+  background: -moz-linear-gradient(top, #f2966d 0%, #f4b192 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f2966d 0%,#f4b192 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f2966d 0%,#f4b192 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2966d', endColorstr='#f4b192',GradientType=0 ); /* IE6-9 */
+
 }
 
-.home .preview-block:nth-child(2) {
-  background: rgb(233,90,79);
+#homecards div:nth-of-type(2) .uk-card {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8666c+0,ef8c8e+100 */
+  background: #e8666c; /* Old browsers */
+  background: -moz-linear-gradient(top, #e8666c 0%, #ef8c8e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e8666c 0%,#ef8c8e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e8666c 0%,#ef8c8e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8666c', endColorstr='#ef8c8e',GradientType=0 ); /* IE6-9 */
 }
 
-.home .preview-block:nth-child(3) {
-  background: rgb(233,147,105);
+#homecards div:nth-child(3) .uk-card {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#01b1bb+0,8dcfd7+100 */
+  background: #01b1bb; /* Old browsers */
+  background: -moz-linear-gradient(top, #01b1bb 0%, #8dcfd7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #01b1bb 0%,#8dcfd7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #01b1bb 0%,#8dcfd7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b1bb', endColorstr='#8dcfd7',GradientType=0 ); /* IE6-9 */
+}
+#homecards div:nth-child(4) .uk-card {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#986898+0,b18db0+100 */
+  background: #986898; /* Old browsers */
+  background: -moz-linear-gradient(top, #986898 0%, #b18db0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #986898 0%,#b18db0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #986898 0%,#b18db0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#986898', endColorstr='#b18db0',GradientType=0 ); /* IE6-9 */
 }
 
-.home .preview-block:nth-child(4) {
-  background: rgb(18,176,186);
+
+#homecards .uk-card-title {
+    color: #fff;
 }
 
+#homecards .uk-card-default .uk-card-header{
+  border-bottom: none;
+  padding: 0 3em;
+}
 
+#homecards .uk-card-default .uk-card-body{
+    padding: 1em 0.5em;
+    background: #fff;
+ text-align: left;
+ box-sizing: content-box;
 
-
+}
 
 .home .footer {
-  background-image: url("../img/sas_logos.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 1000px;
+  /*height: 1000px;*/
 }
 
 
@@ -147,10 +183,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-  .home .hero {
+  .home .hero,
+  .home .content-top {
 
-/*
-    padding-top: 188px;*/
+    padding-top: 2em;
   }
 
 
@@ -169,6 +205,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1700px) {
+
+    .home .hero,
+    .home .content-top {
+
+    padding-top: 3em;
+  }
 
   .home .content-inner-top {
       max-width: initial;
