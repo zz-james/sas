@@ -37,6 +37,8 @@
   line-height: 33px;
   text-align: center;
   border-radius: 5px;
+  background-color: white;
+  color: #333;
 }
 
 .home .metaslider .caption {
@@ -79,7 +81,7 @@
 
 
 #homecards .uk-card{
-    padding: 2em 1em;
+    padding: 1em;
     height: 350px;
 
    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2966d+0,f4b192+100 */
@@ -130,10 +132,15 @@
 #homecards .uk-card-default .uk-card-body{
     padding: 1em 0.5em;
     background: #fff;
- text-align: left;
- box-sizing: content-box;
-
+     text-align: left;
+     box-sizing: content-box;
+    height: 175px;
 }
+
+#homecards .uk-card-default .uk-card-body a {
+      position: fixed;
+    bottom: 1em;
+  }
 
 .home .footer {
   /*height: 1000px;*/

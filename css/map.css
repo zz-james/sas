@@ -1,6 +1,13 @@
 /* styles unnafected by screen size */
 
+#mappage{
+  height: 100%;
+  min-height: 100%}
 
+
+.page-template-local-services .localservices-search--container{
+  display: none;
+}
 
 
 /* ------------------------------ mobile first ------------------------------ */
@@ -8,8 +15,7 @@
 /* below 380px wide styles */
 
 #map {
-  height: 65%;
-/*  display: none;*/
+  height: 75%;
 }
 
 
@@ -19,10 +25,10 @@
 
       background-color: #01b1bb;
 }
-.page-id-4 .uk-card{
+.page-template-local-services .uk-card{
   margin: 1em;
 }
-.page-id-4 .uk-card-body {
+.page-template-local-services .uk-card-body {
     padding: 15px;
 }
 
@@ -126,10 +132,18 @@ input:focus::-moz-placeholder { color:transparent; }
   height: 10px;
 }
 
+  .page-template-local-services .footermenu, 
+     .page-template-local-services .footer-supporters{
+      display: none;
+  }
+
+
 /* ------------------------------------------- */
 
 /* Small Devices, latest Phones */ 
 @media only screen and (min-width : 380px) {
+
+
 
 }
 
@@ -138,9 +152,6 @@ input:focus::-moz-placeholder { color:transparent; }
 /* Small Devices, Tablets Portrait */
 @media only screen and (min-width : 768px) {
 
-.page-id-4 .localservices-search--container{
-  display: none;
-}
 
 
   .map_leftCol .no-mobile {
@@ -161,10 +172,10 @@ input:focus::-moz-placeholder { color:transparent; }
     overflow-y: auto;
 
   }
-.page-id-4 .uk-card{
+.page-template-local-services .uk-card{
   margin: 0 2em;
 }
-.page-id-4 .uk-card-body {
+.page-template-local-services .uk-card-body {
     padding: 30px;
 }
 
@@ -214,7 +225,18 @@ input:focus::-moz-placeholder { color:transparent; }
 @media only screen and (min-width : 992px) {
     #map, #left_col {
       height: 80%;
-}
+      border-bottom: 6px solid #01B1BB;
+  }
+
+  .localservices-search{
+    width: 40%;
+
+  }
+
+  .page-template-local-services .footermenu, 
+     .page-template-local-services .footer-supporters{
+      display: block;
+  }
 }
 
 /* ------------------------------------------- */

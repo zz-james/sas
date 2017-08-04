@@ -4,7 +4,7 @@
 
 
 
-<div class="uk-grid-collapse uk-grid uk-height-1-1" uk-grid>
+<div id="mappage" class="uk-grid-collapse uk-grid" uk-grid>
 
 
 

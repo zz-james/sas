@@ -37,7 +37,6 @@
 
 
       <div id="homecards" class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-stack" uk-grid data-uk-grid-margin><!-- start grid -->
-    <?php query_posts('cat=3'); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  
 

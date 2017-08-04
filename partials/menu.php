@@ -68,14 +68,14 @@
 <!-- offcanvas menu  -->
 <div id="dropmenu" class="dropdownmenu uk-hidden@m"  hidden>
 
-   <div id="offcanvas-nav-primary"  class="">
+   <div id="dropdown-nav-primary"  class="">
       <div class="uk-container uk-container-center">
         <?php 
         wp_nav_menu( array(
                     'theme_location' => 'primary',
-                    'menu_class'     => 'uk-nav uk-text-right',
+                    'menu_class'     => 'uk-nav ',
                     'container' => 'div',
-                    'container_class' => 'uk-panel'
+                    'container_class' => 'uk-panel uk-padding-small'
        )); 
        ?>
        </div>
