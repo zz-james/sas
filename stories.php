@@ -9,7 +9,7 @@
 <div class="content">
 
   <div class="content-top">
-    <div class="content-inner content-inner-top">
+    <div class="content-inner content-inner-top  uk-container uk-container-center">
 
     <div id="slideshow-wrap">
         <input type="radio" id="button-1" name="controls" checked="checked"/>

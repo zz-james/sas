@@ -78,12 +78,11 @@ visibility: hidden;
   content:url("/wp-content/themes/sasv2/img/button-guides.png");
 }
 
+#mainnav .menu-item a[href*="research"]::before,
 #mainnav .menu-item a[href*="survey"]::before {
   content:url("/wp-content/themes/sasv2/img/button-survey.png");
 }
-#mainnav .menu-item a[href*="research"]::before {
-  content:url("/wp-content/themes/sasv2/img/button-survey.png");
-}
+
 
 
 
@@ -126,6 +125,7 @@ visibility: hidden;
 
 li.menu-item a{
 /*  display: inline-block;*/
+vertical-align: middle;
 }
 
 
@@ -176,9 +176,7 @@ li.menu-item::before {
  #dropdown-nav-primary .menu-item a[href*="survey"]::before {
     color: #76418D;
  }
- #dropdown-nav-primary .menu-item a[href*="research"]::before {
-    color: #76418D;
- }
+
 
 
 /* ------------------------------ mobile first ------------------------------ */

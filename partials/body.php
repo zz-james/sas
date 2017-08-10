@@ -10,17 +10,28 @@
       if ( have_posts() ) {
           while ( have_posts() ) {
 
+
+
             echo ('<div class="uk-flex-center uk-child-width-1-2 uk-child-width-1-4@m uk-child-width-1-6@l " uk-grid>');
+            
+if ( has_post_thumbnail() ) {
+
             echo ('<div class="">');
 
             the_post_thumbnail( 'post-thumbnail', ['class' => 'uk-align-right'] );
 
-            echo ('</div><div class="">');
+            echo ('</div>');
 
-            the_title( '<h3 class="text-white">', '</h3>');
+            
+            }
+                echo ('<div class="">');
+
+                the_title( '<h3 class="text-white">', '</h3>');
 
 
-            echo ('</div></div>');
+                echo ('</div>');
+
+          echo ('</div>');
 
               ?>
 </div>

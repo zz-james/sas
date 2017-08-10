@@ -18,11 +18,11 @@
 
 
 .page-template-peach .content {
- background: #f2966d; /* Old browsers */
-  background: -moz-linear-gradient(top, #f2966d 0%, #EF8C8D 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f2966d 0%,#EF8C8D 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f2966d 0%,#EF8C8D 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2966d', endColorstr='#EF8C8D',GradientType=0 ); /* IE6-9 */
+ background: rgb(242,142,120); /* Old browsers */
+  background: -moz-linear-gradient(top, rgb(242,142,120) 0%, rgb(244,160,127) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgb(242,142,120) 0%,rgb(244,160,127) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgb(242,142,120) 0%,rgb(244,160,127) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(242,142,120)', endColorstr='rgb(244,160,127)',GradientType=0 ); /* IE6-9 */
 }
 
 
