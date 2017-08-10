@@ -22,6 +22,26 @@
 
         <h4 class="uk-align-center">Supported by</h4>
 
+
+<?php if( have_rows('members', 'option') ): ?>
+
+    <ul>
+
+    <?php while( have_rows('members', 'option') ): the_row(); ?>
+
+        <li><a href="<?php the_sub_field('url'); ?>" > <?php the_sub_field('name'); ?></li>
+
+    <?php endwhile; ?>
+
+    </ul>
+
+<?php endif; ?>
+
+
+
+
+
+
                      <?php 
             wp_nav_menu( array(
                         'menu' => 'Partners',
