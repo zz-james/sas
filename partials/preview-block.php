@@ -15,17 +15,19 @@ if( $boxes ) {
     $title = esc_html( get_post_meta( get_the_ID(), 'hpwidget_' . $i . '_title', true ) );
     $desc = esc_html( get_post_meta( get_the_ID(), 'hpwidget_' . $i . '_description', true ) );
     $url = (get_post_meta( get_the_ID(), 'hpwidget_' . $i . '_readmore', true ));
+    $icon = (int) get_post_meta( get_the_ID(), 'hpwidget_' . $i . '_w-icon', true );
     
     // Thumbnail field returns image ID, so grab image. If none provided, use default image
-    // $thumbnail = $thumbnail ? wp_get_attachment_image( $thumbnail, 'be_video' ) : '<img src="' . get_stylesheet_directory_uri() . '/images/default-video.png" />';
+     $icon =  wp_get_attachment_image( $icon,  "", "", ["class" => "uk-align-right"] ) ;
     ?>
 
   <div>
 
   <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
 
-    <div class="uk-card-header">
-        <h3  class="uk-card-title"><?php echo $title; ?></h3>
+    <div class="uk-grid-small" uk-grid>
+      <div class="uk-width-1-2"> <?php echo $icon; ?></div>
+        <h3  class="uk-width-1-2 uk-card-title uk-text-left"><?php echo $title; ?></h3>
     </div>
 
     <div class="uk-card-body uk-position-small uk-position-bottom-center uk-overlay uk-overlay-default uk-width-4-5">

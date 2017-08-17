@@ -27,6 +27,7 @@
 
 <!-- -->
 <div id="menu" class="menubar uk-visible@m"> 
+
   <div class="menubar--inner  uk-container uk-container-center"> 
 
 
@@ -51,14 +52,14 @@
          ?>
          </ul>
 
-       <!--   <div class="menubar--social no-mobile">
+         <div class="menubar--social">
         
 
           <a href="https://www.facebook.com/supportaftersuicideuk/" target="_new" class="facebook"></a>
           <a href="https://twitter.com/aftersuicideuk" target="_new" class="twitter"></a>
 
         </div>
- -->
+
       </nav>
 
 

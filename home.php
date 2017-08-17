@@ -21,8 +21,9 @@
 <div class="hero">
 
 <?php 
+// Dev = 581, staging = 553, live = 715
 
-    echo do_shortcode("[metaslider id=716]"); 
+    echo do_shortcode("[metaslider id=581]"); 
 
 ?>
 

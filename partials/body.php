@@ -2,9 +2,6 @@
 
 
 
-
-
-
 <div class="content-header uk-container uk-container-center uk-padding">
       <?php
       if ( have_posts() ) {

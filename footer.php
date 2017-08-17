@@ -26,7 +26,7 @@
 
         <?php if( have_rows('members', 'option') ): ?>
 
-            <ul class="partners uk-child-width-1-2@s uk-child-width-1-3@m uk-text-left" uk-grid>
+            <ul class="partners uk-child-width-1-2@s uk-child-width-1-3@m uk-text-left uk-grid-small" uk-grid>
 
             <?php while( have_rows('members', 'option') ): the_row(); ?>
 

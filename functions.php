@@ -12,6 +12,10 @@ function enqueue_styles() {
     /** REGISTER css/screen.css **/
     wp_register_style( 'screen-style', THEME_DIR . '/style.css', array(), '1', 'all' );
     wp_enqueue_style( 'screen-style' );
+
+     
+     
+  
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 
@@ -29,8 +33,8 @@ function enqueue_scripts() {
 
   wp_enqueue_script('utilities', THEME_DIR.'/javascript/utils.js', array( 'jquery' ), '1', true );
 
-  wp_enqueue_script('uikitjs',THEME_DIR.'/javascript/uikit.js', array( 'jquery' ), null, false );  
-
+  wp_enqueue_script('uikitjs',THEME_DIR.'/javascript/uikit.min.js', array( 'jquery' ), null, false );  
+  wp_enqueue_script('uikiticons',THEME_DIR.'/javascript/uikit-icons.min.js', array( 'uikitjs' ), null, false );  
 
   if( is_page(4)  ) {  // this is the map page
     wp_register_script('map-data', THEME_DIR.'/javascript/local_services.json', [], null, true );
@@ -40,6 +44,7 @@ function enqueue_scripts() {
     wp_enqueue_script('google-maps');   
 
   }
+
 
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );

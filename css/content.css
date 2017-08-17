@@ -49,6 +49,16 @@ td {
   background-color: #fff;
 }
 
+
+.startquote svg {
+    transform-origin: 50% 25%;
+    transform: rotate(180deg);
+}
+
+.endquote svg {
+    transform: translate(0px, -5px);
+}
+
 .your-stories .content-top {
     padding-top: 22%;
 }
