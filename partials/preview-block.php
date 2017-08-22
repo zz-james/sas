@@ -26,8 +26,8 @@ if( $boxes ) {
   <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
 
     <div class="uk-grid-small" uk-grid>
-      <div class="uk-width-1-2"> <?php echo $icon; ?></div>
-        <h3  class="uk-width-1-2 uk-card-title uk-text-left"><?php echo $title; ?></h3>
+      <div class="uk-width-2-5"> <?php echo $icon; ?></div>
+        <h3  class="uk-width-3-5 uk-card-title uk-text-left"><?php echo $title; ?></h3>
     </div>
 
     <div class="uk-card-body uk-position-small uk-position-bottom-center uk-overlay uk-overlay-default uk-width-4-5">
